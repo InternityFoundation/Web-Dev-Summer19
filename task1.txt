@@ -1,4 +1,4 @@
-task for intern:
+task :
 
 
 1. Watching set of karate kid videos
