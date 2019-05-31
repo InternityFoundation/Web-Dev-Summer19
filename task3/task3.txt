@@ -1,0 +1,21 @@
+Pre:-     Text in a pre element is displayed in a fixed-width font, and it preserves both spaces and line breaks.
+
+Abbr:-    The global title attribute is used with the <abbr> tag to show the description of the abbreviation/acronym when you mouse over the <abbr> element.
+
+Bdo:-     The <bdo> tag is used to override the current text direction.
+Blockquote:The <blockquote> tag specifies a section that is quoted from another source.
+time       <time> tag defines a human-readable date/timewcr
+
+Wbr	  When a word is too long, or you are afraid that the browser will break your lines at the wrong place, you can use the <wbr> element to add word break opportunities. When a word is too long, or you are afraid that the browser will break your lines at the wrong place, you can use the <wbr> element to add word break opportunities.
+
+kbd:-     The <kbd> tag defines a keyboard input. The tag is used when it is needed to display text that the user should enter into their keyboard (for any number of reasons).
+
+small:-   The content of the tag in the browser is displayed in monospaced font (all characters have the same width).
+
+s tag:-   The <s> tag specifies text that is no longer correct, accurate or relevant.
+          The <s> tag should not be used to define replaced or deleted text, use the <del> tag to define replaced or deleted text.
+
+embed:-   The <embed> tag defines a container for an external application or interactive content (a plug-in)
+
+iframe:-  The <iframe> tag specifies an inline frame.
+          An inline frame is used to embed another document within the current HTML document.
