@@ -1,0 +1,41 @@
+html:-
+The <html> tag tells the browser that this is an HTML document.
+The <html> tag represents the root of an HTML document.
+The <html> tag is the container for all other HTML elements.
+
+Doctype:-
+The <!DOCTYPE> declaration must be the very first thing in your HTML document, before the <html> tag.
+The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.
+In HTML 4.01, the <!DOCTYPE> declaration refers to a DTD, because HTML 4.01 was based on SGML. The DTD specifies the rules for the markup language, so that the browsers render the content correctly.
+HTML5 is not based on SGML, and therefore does not require a reference to a DTD.
+
+Base:-
+the <base> tag specifies the base URL/target for all relative URLs in a document.
+
+link:-
+The <link> tag defines a link between a document and an external resource.
+The <link> tag is used to link to external style sheets.
+
+Meta:-
+Metadata is data (information) about data.
+The <meta> tag provides metadata about the HTML document. Metadata will not be displayed on the page, but will be machine parsable.
+Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other metadata.
+
+
+head:-
+The <head> element is a container for all the head elements.
+The <head> element can include a title for the document, scripts, styles, meta information, and more.
+
+Style:-
+The <style> tag is used to define style information for an HTML document.
+Inside the <style> element you specify how HTML elements should render in a browser.
+Each HTML document can contain multiple <style> tags
+
+Script:-
+The <script> tag is used to define a client-side script (JavaScript).
+The <script> element either contains scripting statements, or it points to an external script file through the src attribute.
+Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content
+
+Noscript:-
+The <noscript> tag defines an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support script.
+The <noscript> element can be used in both <head> and <body>.
