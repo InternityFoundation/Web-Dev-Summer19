@@ -1,0 +1,66 @@
+table:-
+An HTML table is defined with the <table> tag.
+Each table row is defined with the <tr> tag. A table header is defined with the <th> tag. By default, table headings are bold and centered. 
+A table data/cell is defined with the <td> tag.
+
+Caption:-
+The <caption> tag defines a table name.
+The <caption> tag must be inserted immediately after the <table> tag.
+
+Colgroup:-
+The <colgroup> tag specifies a group of one or more columns in a table for formatting.
+The <colgroup> tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.
+
+tbody:-
+The <tbody> tag is used to group the body content in an HTML table.
+The <tbody> tag must be used in the following context: As a child of a <table> element, after any <caption>, <colgroup>, and <thead> elements.
+
+thead:-
+The <thead> tag is used to group header content in an HTML table.
+The <thead> tag must be used in the following context: As a child of a <table> element, 
+after any <caption>, and <colgroup> elements, and before any <tbody>, <tfoot>, and <tr> elements.
+
+tfoot:-
+The <tfoot> tag is used to group footer content in an HTML table.
+The <tfoot> tag must be used in the following context: As a child of a <table> element, after any <caption>, <colgroup>, <thead>, and <tbody> elements.
+
+
+form:-
+The <form> tag is used to create an HTML form for user input.
+
+
+fieldset:-
+The <fieldset> tag is used to group related elements in a form.
+The <fieldset> tag draws a box around the related elements.
+
+
+legend:-
+The <legend> tag defines a caption for the <fieldset> element.
+
+
+label:-
+The <label> tag defines a label for a <button>, <input>, <meter>, <output>, <progress>, <select>, or <textarea> element.
+The <label> element does not render as anything special for the user. However, it provides a usability improvement for mouse users,
+because if the user clicks on the text within the <label> element, it toggles the control.
+
+
+input:-
+The <input> tag specifies an input field where the user can enter data.
+
+button:-
+The <button> tag defines a clickable button.
+
+
+select:-
+The <select> element is used to create a drop-down list.
+
+
+optgroup:-
+The <optgroup> is used to group related options in a drop-down list.
+
+option:-
+The <option> tag defines an option in a select list.
+
+
+textarea:-
+The <textarea> tag defines a multi-line text input control.
