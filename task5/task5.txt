@@ -1,0 +1,28 @@
+Canvas:-
+The <canvas> tag is used to draw graphics, on the fly, via scripting (usually JavaScript).
+The <canvas> tag is only a container for graphics, you must use a script to actually draw the graphics.
+
+SVG:-
+SVG stands for Scalable Vector Graphics
+SVG is used to define vector-based graphics for the Web
+SVG defines the graphics in XML format
+Every element and every attribute in SVG files can be animated
+SVG is a W3C recommendation
+SVG integrates with other W3C standards such as the DOM and XSL
+
+
+HTML DOM:-
+The Document Object Model (DOM) is a programming interface for HTML and XML(Extensible markup language) documents.
+
+Methods of Document Object:
+write(“string”): writes the given string on the document.
+getElementById(): returns the element having the given id value.
+getElementsByName(): returns all the elements having the given name value.
+getElementsByTagName(): returns all the elements having the given tag name.
+getElementsByClassName(): returns all the elements having the given class nameIt defines the logical structure of documents and the way a document is accessed and manipulated.
+
+
+
+BIG writing:-
+The <big> tag is not supported in HTML5. Use CSS instead.
+The <big> tag defines bigger text
