@@ -1,0 +1,35 @@
+task for intern:
+
+
+1. Watching set of karate kid videos
+
+   Complete
+
+
+2. Calling/Contacting your coaches/ Stream Heads.
+
+   contacting your coache complete.
+
+3. Going through internity blogs.
+
+   complete.
+4. Creating all the requires accounts like slack, trello GitHub, stackoverflow etc
+
+   all accounts created 
+
+5. Write your experience in form of Blog
+
+   Karate kid videos :
+
+   These videos show that we choose a coach and believe your coach and then coach provide the correct way of learning. 
+   Coach train the student from beginner level.
+   Student should have believe in coach.
+   Mentors want to provide a valuable practice experience for students but are constrained by multiple demands and limited resources.
+   Thementor's role is paramount in student assessment and the mentor should receive thesupport necessary to enhance student learning.
+
+6. Introduce yourself on slack
+   My Name is Anirudh Sharma . I have just completed my 6th semester of B.tech.(CSE) from  MJP Rohilkhand University,Bareilly.
+   My CGPA is 7.5 . My hometown is Gonda.
+   I want to work on web development through internity.
+
+
