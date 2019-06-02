@@ -1,0 +1,27 @@
+Html Elements:
+
+DOCTYPE: A DOCTYPE declaration appears at the top of a web page before all other elements. Every HTML document requires a document type declaration to insure that your pages are displayed the way they are intended to be displayed.
+
+The DOCTYPE for HTML5 is very short, and case-insensitive.
+
+<!DOCTYPE html>
+
+html: The HTML <html> tag represents the root of an HTML document. It is the container that contains all other HTM L elements.
+
+Document Metadata: Document metadata is information attached to a text-based file that may not be visible on the face of the document; documents may also contain supporting elements such as graphic images, photographs, tables and charts, each of which can have its own metadata.Metadata summarizes basic information about data, which can make finding and working with particular instances of data easier.
+
+head: The <head> element can contain other HTML tags that contain metadata. Metadata provides information about the document such as title, description, keywords etc. A typical HTML document might contain a <title> tag, one or more <meta> tags, a <script> tag, and a <style> tag - all enclosed within the <head> element.
+
+title: HTML tag used to define the text in the top line of a Web browser, also used by many search engines as the title of search listings.
+
+link: The HTML <link> tag is used for defining a link to an external resource. It is placed in in the <head> section of the HTML document.The <link> tag is commonly used for linking to an external style sheet. But it can also be used for other purposes such as assisting search engines by providing links to relevant resources, and providing information on the website's navigational structure, etc.
+
+meta : The <meta> tag is used to provide such additional information. This tag is an empty element and so does not have a closing tag but it carries information within its attributes.You can include one or more meta tags in your document based on what information you want to keep in your document.
+
+style: The <style> element is used to add CSS style rules to an HTML document. The element is expected to appear in the document <head>, but will also render acceptably when used in the <body> of the document.
+
+script: The <script> tag is used to define a client-side script (JavaScript).The <script> element either contains scripting statements, or it points to an external script file through the src attribute.Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.
+
+noscript: The HTML <noscript> tag is used to handle the browsers which do recognize <script> tag but do not support scripting. This tag is used to display alternate text message.
+
+https://medium.com/@ani838281/html-elements-7a4f77dbb8da
