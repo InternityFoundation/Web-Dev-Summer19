@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .as{
+            color: red;
+        }
+        #div2{
+            width: 400px;
+            height: 100px;
+            border: 2px solid grey;
+        }
+    </style>
+
+</head>
+<body>
+   <a href="task3/pg3.html" accesskey="a">TASK3</a> 
+   <div class="as"><p>class Property</p></div>
+    <div class="as"><p>class Property</p></div>
+    <p contenteditable="true">U can edit here</p>
+    <p>Click on following list to know data* property</p>
+    <ul>
+        <li onclick="asd(this)" id="data" data-pr-type="programming">Data Structure</li>
+        
+    <li onclick="asd(this)" id="java" data-pr-type="language">Java</li>
+    </ul>
+      <div id="div2" ondrop="drop(event)"  ondragover="allowDrop(event)"></div>
+       <p id="div1" ondragstart="drag(event)" draggable="true">!You can drag and drop  this line in rectangle</p>
+       <p hidden> Hidden Property</p>
+       <p lang="en">Lang property is english</p>
+       <a href="#aaa" tabindex="3">Tabindex3</a><br>
+        <a href="#kkkk" tabindex="2">Tabindex2</a><br>
+        <a href="#zzz" tabindex="1">Tabindex1</a>
+        <p contenteditable="true" spellcheck="true">This is a praggagraph. It is editable. Try to change the text.</p>
+        <script>
+            function drag(ev)
+            {
+                ev.dataTransfer.setData("Text",ev.target.id);
+            }
+            function drop(ev)
+            {
+ var data = ev.dataTransfer.getData("Text");
+  ev.target.appendChild(document.getElementById(data));
+  ev.preventDefault();
+            }
+            function allowDrop(ev)
+            {
+                ev.preventDefault();
+            }
+        function asd(pr)
+        {
+         var ba=pr.getAttribute("data-pr-type");
+            alert("The "+pr.innerHTML +" is "+ba+".");
+        }
+    </script>
+    <b>List:-</b>
+    <dir>
+       <li>HTML</li>
+       <li>CSS</li>
+    </dir>
+    <p>without directory</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+</body>
+</html>

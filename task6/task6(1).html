@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="SSC-Book">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+   <form action="abc.php" accept-charset="ISO-8859-1" accept="image/gif,image/jpg">
+    <label for="name">Name</label><input type="text" name="fName" autocomplete="on" autofocus><br>
+     <label for="l-name">Lastname</label><input type="text" name="lname" disabled><br>
+      <label for="img">Image</label><input type="file" name="img" id="img1"><br>
+      <input type="submit" value="submit" ><br>
+      <p>click image to download</p>
+       <a href="t2.jpg" download><img src="t2.jpg" alt="girl" style="float: left;"></a><br>
+      
+      <input type="search" autosave="google" / style="float: left;">
+      <table style="float: left;">
+         <tr><th>month</th><th>spend</th></tr>
+       <tr><td>jan</td> <td>2000</td></tr> 
+       <tr><td>feb</td><td>4000</td></tr>
+       <tr><td colspan="2">Sum: 6000</td></tr>         
+      </table>
+    <label for="b-day">DOB</label>  <input type="datetime-local">
+      <button type="submit" formaction="asd.php" value="submit" style="float: left;">Submit</button>
+       
+   </form> 
+</body>
+</html>

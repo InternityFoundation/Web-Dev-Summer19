@@ -1,0 +1,69 @@
+Global Attributes:-
+accesskey	Specifies a shortcut key to activate/focus an element
+class	Specifies one or more classnames for an element (refers to a class in a style sheet)
+contenteditable	Specifies whether the content of an element is editable or not
+data-*	Used to store custom data private to the page or application
+dir	Specifies the text direction for the content in an element
+The <dir> (short for directory) tag specifies a directory list. It was designed to be used for creating multicolumn directory lists.
+
+
+draggable:-
+Specifies whether an element is draggable or not
+
+
+dropzone:-
+Specifies whether the dragged data is copied, moved, or linked, when dropped
+
+
+
+hidden	Specifies that an element is not yet, or is no longer, relevant
+id	Specifies a unique id for an element
+
+lang	Specifies the language of the element's content
+
+spellcheck	Specifies whether the element is to have its spelling and grammar checked or not
+style	Specifies an inline CSS style for an element
+tabindex	Specifies the tabbing order of an element
+title	Specifies extra information about an element
+translate	Specifies whether the content of an element should be translated or not
+
+
+accept-charset:-
+The accept-charset attribute specifies the character encodings that are to be used for the form submission.
+
+alt:-
+The required alt attribute specifies an alternate text for an image, if the image cannot be displayed.
+
+async:-
+The async attribute is a boolean attribute.
+When present, it specifies that the script will be executed asynchronously as soon as it is available.The async attribute is only for external scripts.
+
+
+autocomplete:-
+The autocomplete attribute specifies whether or not an input field should have autocomplete enabled.
+Autocomplete allows the browser to predict the value. When a user starts to type in a field, the browser should display options to fill in the field, based on earlier typed values.
+Note: The autocomplete attribute works with the following <input> types: text, search, url, tel, email, password, datepickers, range, and color.
+
+
+colspan:-
+The colspan attribute defines the number of columns a cell should span.
+
+datetime:-
+The <input type="datetime-local"> defines a date picker.
+The resulting value includes the year, month, day, and time.
+
+
+disabled:-
+A disabled input element is unusable and un-clickable.
+The disabled attribute can be set to keep a user from using the <input> element until some other condition has been met (like selecting a checkbox, etc.). 
+Then, a JavaScript could remove the disabled value, and make the <input> element usable.
+
+
+formaction:-
+The formaction attribute specifies where to send the form-data when a form is submitted. This attribute overrides the form's action attribute.
+
+
+
+
+
+
