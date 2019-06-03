@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+<head>
+
+<title>DAY 2</title>
+<style>
+
+  
+a.one:link {color:"pink";}
+a.one:visited {color:"green";}
+a.one:hover {color:"red";}
+
+a.two:link {color:"hotpink";}
+a.two:visited {color:"green";}
+a.two:hover {font-size:150%;}
+
+a.three:link {color:"blue";text-decoration:none;}
+a.three:visited {color:"green";text-decoration:none;}
+a.three:hover {text-decoration:underline;}
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="www.google.com"  target="self">
+</head>
+<body>
+<b><p id="choose" style="text-align:center;background-color:yellow;"><\p>
+<script>
+document.getElementById("choose").innerHTML="welcome into my program  in internity";
+</script>
+<br><br></b>
+<img src="bike.jpg" width="30%" height ="50%" alt="missing or couldn't found">.<br>
+<a class="two"  href ="www.google.com"> click on this link</a>
+<br><br>
+<a class="one"  href ="www.google.com"> click on this link</a>
+</body>
+</html>
