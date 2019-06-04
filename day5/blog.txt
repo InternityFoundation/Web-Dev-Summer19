@@ -1,0 +1,37 @@
+The Canvas API provides a means for drawing graphics via JavaScript and the HTML <canvas> element. Among other things, it can be used for animation, game graphics, data visualization, photo manipulation, and real-time video processing.
+
+Basic example:
+This simple example draws a green rectangle onto a canvas.
+
+HTML File:
+
+
+JS File:
+
+
+The Document.getElementById() method gets a reference to the HTML <canvas> element. Next, the HTMLCanvasElement.getContext() method gets that element’s context?—?the thing onto which the drawing will be rendered.
+
+The actual drawing is done using the CanvasRenderingContext2D interface. The fillStyle property makes the rectangle green. The fillRect() method places its top-left corner at (10, 10), and gives it a size of 150 units wide by 100 tall.
+
+Result:
+
+
+Drawing text:
+The canvas rendering context provides two methods to render text:
+
+fillText(text, x, y [, maxWidth])?—?Fills a given text at the given (x,y) position. Optionally with a maximum width to draw.
+
+strokeText(text, x, y [, maxWidth])?—?Strokes a given text at the given (x,y) position. Optionally with a maximum width to draw.
+
+A fillText example:
+The text is filled using the current fillStyle.
+
+
+
+A strokeText example:
+The text is filled using the current strokeStyle.
+
+
+
+A textBaseline example:
+
