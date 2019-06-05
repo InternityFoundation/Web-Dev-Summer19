@@ -1,0 +1,73 @@
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.note {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.editorial {
+    background: rgb(255, 0, 0, .25);
+    padding: 10px;
+}
+
+.editorial:before {
+    content: 'Editor: ';
+}
+blockquote {
+    background: #eee;
+    border-radius: 5px;
+    margin: 16px 0;
+}
+
+blockquote p {
+    padding: 15px;
+}
+
+cite {
+    margin: 16px 32px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}
+
+[contenteditable='true'] {
+    caret-color: red;
+}
+h1 {
+    margin: 0;
+}
+
+ul {
+    margin: 10px 0 0;
+}
+
+li {
+    position: relative;
+    width: 200px;
+    padding-bottom: 10px;
+}
+
+li:after {
+    content: 'Data ID: ' attr(data-id);
+    position: absolute;
+    top: -22px;
+    left: 10px;
+    background: black;
+    color: white;
+    padding: 2px;
+    border: 1px solid #eee;
+    opacity: 0;
+    transition: 0.5s opacity;
+}
+
+li:hover:after {
+    opacity: 1;
+}
