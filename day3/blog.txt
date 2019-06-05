@@ -1,18 +1,19 @@
+HTML Layouts
+
 Websites often display content in multiple columns (like a magazine or newspaper).
 
 HTML5 offers new semantic elements that define the different parts of a web page
 
 
-header?—?There is a crucial difference between the header element and the general accepted usage of header (or masthead). There’s usually only one header or ‘masthead’ in a page. In HTML5 you can have as many as you want. The spec defines it as “a group of introductory or navigational aids”. You can use a header in any section on your site. In fact, you probably should use a header within most of your sections. The spec describes the section element as “a thematic grouping of content, typically with a heading.”
+headerâ€Šâ€”â€ŠThere is a crucial difference between the header element and the general accepted usage of header (or masthead). Thereâ€™s usually only one header or â€˜mastheadâ€™ in a page. In HTML5 you can have as many as you want. The spec defines it as â€œa group of introductory or navigational aidsâ€. You can use a header in any section on your site. In fact, you probably should use a header within most of your sections. The spec describes the section element as â€œa thematic grouping of content, typically with a heading.â€
 
-nav?—?Intended for major navigation information. A group of links grouped together isn’t enough reason to use the nav element. Site-wide navigation, on the other hand belongs in a nav element.
+navâ€Šâ€”â€ŠIntended for major navigation information. A group of links grouped together isnâ€™t enough reason to use the nav element. Site-wide navigation, on the other hand belongs in a nav element.
 
-section?—?Used for grouping together thematically-related content. Sounds like a div element, but it’s not. The div has no semantic meaning. Before replacing all your div’s with section elements, always ask yourself: “Is all of the content related?”
+sectionâ€Šâ€”â€ŠUsed for grouping together thematically-related content. Sounds like a div element, but itâ€™s not. The div has no semantic meaning. Before replacing all your divâ€™s with section elements, always ask yourself: â€œIs all of the content related?â€
 
-aside?—?Used for tangentially related content. Just because some content appears to the left or right of the main content isn’t enough reason to use the aside element. Ask yourself if the content within the aside can be removed without reducing the meaning of the main content. Pullquotes are an example of tangentially related content.
+asideâ€Šâ€”â€ŠUsed for tangentially related content. Just because some content appears to the left or right of the main content isnâ€™t enough reason to use the aside element. Ask yourself if the content within the aside can be removed without reducing the meaning of the main content. Pullquotes are an example of tangentially related content.
 
-footer?—?Sounds like its a description of the position, but its not. Footer elements contain informations about its containing element: who wrote it, copyright, links to related content, etc. Whereas we usually have one footer for an entire document, HTML5 allows us to also have footer within sections.
+footerâ€Šâ€”â€ŠSounds like its a description of the position, but its not. Footer elements contain informations about its containing element: who wrote it, copyright, links to related content, etc. Whereas we usually have one footer for an entire document, HTML5 allows us to also have footer within sections.
 
-article?—?Used for element that specifies independent, self-contained content. An article should make sense on its own. Before replacing all your div’s with article elements, always ask yourself: “Is it possible to read it independently from the rest of the web site?”
+articleâ€Šâ€”â€ŠUsed for element that specifies independent, self-contained content. An article should make sense on its own. Before replacing all your divâ€™s with article elements, always ask yourself: â€œIs it possible to read it independently from the rest of the web site?â€
 
-https://medium.com/@ani838281/html-layouts-5e3100407ece
