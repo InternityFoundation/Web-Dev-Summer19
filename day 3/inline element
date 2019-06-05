@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DAY3</title>
+<style>
+li
+{ float:left;
+}
+</style>
+</head>
+<body>
+<p style="text-align:center;font-size:25px;color:green;"><strong>Different types of Inline elements</strong></p>
+<p>this is <span style="color:red">span</span> used to color  the particular text in document</p>
+<small>This text will become small</small>
+<p>this is subscript log<sub>2</sub>.</p>
+<p>this is superscript 2<sup>5</sup>.</p>
+<p>this is time tag . I have a meeting on <time datetime="2019-05-25 10:00"> tuesday</time>.</p>
+<p>wbr tag specifies where it would be gud to<wbr> break a line in a text to a browse.it importance will understand when you minimize ur screen. </p>
+<br>
+<p> this mark tag is to mark the text <mark>like this</mark>. </p>
+<p>   Doing internship at  <abbr title="Internity Foundation">IF<abbr> 
+
+
+
+
+</body>
+</html>
