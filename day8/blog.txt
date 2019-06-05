@@ -1,0 +1,61 @@
+HTML attribute reference
+
+Elements in HTML have attributes; these are additional values that configure the elements or adjust their behavior in various ways to meet the criteria the users want.
+
+<input> height Attributee:
+The height attribute specifies the height of the <input> element.
+
+Note:The height attribute is used only with <input type=”image”>.
+
+
+Result:
+
+
+href Attribute:
+For <a> and <area> elements, the href attribute specifies the URL of the page the link goes to.
+
+For <base> elements, the href attribute specifies the base URL for all relative URLs on a page.
+
+For <link> elements, the href attribute specifies the location (URL) of the external resource (most often a style sheet file).
+
+
+Result:
+
+
+<label> Tag:
+The <label> tag defines a label for a <button>, <input>, <meter>, <output>, <progress>, <select>, or <textarea> element.
+
+The <label> element does not render as anything special for the user. However, it provides a usability improvement for mouse users, because if the user clicks on the text within the <label> element, it toggles the control.
+
+The for attribute of the <label> tag should be equal to the id attribute of the related element to bind them together.
+
+
+
+loop:
+The loop attribute is a boolean attribute.
+
+When present, it specifies that the audio will start over again, every time it is finished.
+
+The loop attribute can be used on the following elements:
+
+<audio>
+
+<video>
+
+
+
+novalidate:
+The novalidate attribute is a boolean attribute.
+
+When present, it specifies that the form-data (input) should not be validated when submitted.
+
+
+
+type:
+For button elements, the type attribute specifies the type of button.
+
+For input elements, the type attribute specifies the type of <input> element to display.
+
+For embed, link, object, script, source, and style elements, the type attribute specifies the Internet media type .
+
+
