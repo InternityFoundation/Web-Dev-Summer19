@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.fieldset1
+{
+  background-color:hotpink;
+  max-width:500px;
+  padding:16px;
+
+}
+.legend1
+{
+  margin-bottom:0px;
+  margin-left:56px;
+	
+}
+.fieldset2
+{
+  background-color:grey;
+  max-width:500px;
+  padding:16px;	
+}
+.select-rishi {
+  background-color: hotpink;
+border: 6px solid transparent;
+}
+
+</style>
+</head>
+</html>
