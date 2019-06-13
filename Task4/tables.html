@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+    <meta charset="UTF-8">
+    <title>Tables and forms</title>
+    <style type="text/css">
+        thead{background-color: green;}
+        tbody{background-color: lightgreen;}
+        tfoot{background-color: lightblue;}
+        #t01{
+            border:2px solid black;
+            border-collapse: collapse;
+            padding:10px;
+            text-align: left;
+            color:darkblue;
+        }     </style>
+    </head>
+    <body>
+
+
+    <table id ="t01" style="width: 60%;">
+        <caption> Name, Place, Animal, And Things</caption>
+        <colgroup>
+            <col span="1" style="border-style: dotted;">
+            <col span="3">
+            <col span="2" style="border-style: dotted;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Character</th>
+                <th>Name</th>
+                <th>Place</th>
+                <th>Animal</th>
+                <th colspan="2">Things</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td>Aman</td>
+                <td>Australia</td>
+                <td>Anteater</td>
+                <td>Apple</td>
+                <td>Arrow</td>
+            </tr>
+            <tr>
+              
+                <td>D</td>
+                <td>Darshan</td>
+                <td>Denamrk</td>
+                <td>Deer</td>
+                <td>Dairy</td>
+                <td>Dust</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>R</td>
+                <td>Roger</td>
+                <td>Russia</td>
+                <td>Reindeer</td>
+                <td>Rose</td>
+                <td>Rubber band</td>
+            </tr>
+        </tfoot>
+     </table>
+
+    </body>
+    </html>
