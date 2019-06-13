@@ -1,0 +1,2 @@
+forms blog: https://nastydaemontech.blogspot.com/2019/06/designing-forms.html
+tables blog : https://nastydaemontech.blogspot.com/2019/06/making-tables.html
