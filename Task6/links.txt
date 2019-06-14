@@ -1,0 +1,2 @@
+global attributes link: https://nastydaemontech.blogspot.com/2019/06/most-with-html-attributes.html
+miscellaneous link : https://nastydaemontech.blogspot.com/2019/06/more-html-attributes.html
