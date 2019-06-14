@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas Example</title>
+</head>
+<body>
+<canvas id="canvas1" width="200" height="100" style="border:1px solid black">
+</canvas>&nbsp&nbsp&nbsp&nbsp
+<script type="text/javascript">
+	var c=document.getElementById("canvas1");
+	var ctx=c.getContext("2d");
+	ctx.beginPath();
+	ctx.arc(100,50,40,0,2*Math.PI);
+	ctx.stroke()  	
+</script>
+
+<canvas id="canvas2" width="200" height="100" style="border:1px solid black">
+</canvas><br><br>
+<script type="text/javascript">
+	var c=document.getElementById("canvas2");
+	var ctx=c.getContext("2d");
+	ctx.font="30px Arial";
+	ctx.fillText("Hello World",10,50);
+</script>
+
+<canvas id="canvas3" width="200" height="100" style="border:1px solid black">
+</canvas>&nbsp&nbsp&nbsp&nbsp
+<script type="text/javascript">
+	var c= document.getElementById("canvas3");
+	var ctx=c.getContext("2d");
+	ctx.moveTo(0,0);
+	ctx.lineTo(200,100);
+	ctx.stroke();
+</script>
+
+<canvas id="canvas4" width="200" height="100" style="border:1px solid black">
+</canvas><br><br>
+<script type="text/javascript">
+	var c=document.getElementById("canvas4");
+	var ctx=c.getContext("2d");
+	ctx.font="30px Arial";
+	ctx.strokeText("Hello World",10,50);
+</script>
+
+
+<canvas id="canvas5" width="200" height="100" style="border:1px solid black">
+</canvas>&nbsp&nbsp&nbsp&nbsp
+<script type="text/javascript">
+	var c=document.getElementById("canvas5");
+	var ctx=c.getContext("2d");
+	var grd= ctx.createLinearGradient(0,0,200,200);
+	grd.addColorStop(0,"red");
+	grd.addColorStop(1,"white");
+	ctx.fillStyle=grd;
+	ctx.fillRect(10,10,150,80); 
+</script>
+
+<canvas id="canvas6" width="200" height="100" style="border:1px solid black">
+</canvas><br><br>
+<script type="text/javascript">
+	var c=document.getElementById("canvas6");
+	var ctx=c.getContext("2d");
+	var grd= ctx.createRadialGradient(75, 50, 5, 90, 60,100);
+	grd.addColorStop(0,"red");
+	grd.addColorStop(1,"white");
+	ctx.fillStyle=grd;
+	ctx.fillRect(10,10,150,80); 
+</script>
+
+</body>
+</html>
