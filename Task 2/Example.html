@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="description" content="Free Web tutorials">
+
+<title>
+Sample Html document!
+</title>
+<base href="https://images.pexels.com/photos/814499/" target="_blank">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+ <style>
+    body {background-color: powderblue; font-size: 30px}
+    h1 {color: red;}
+    p {color: blue;}
+  </style>
+</head>
+<body>
+<h1><center>Welcome to this first Html page</center></h1>
+<center><img src="pexels-photo-814499.jpeg" height=50% width=50%></center>
+<p><b><font color=black>Since we have specified a base URL, the browser will look for the image <br>"pexels-photo-814499.jpeg" at "https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg"</font></b></p>
+<a href="https://www.google.com">Click here this is a link</a><br>
+
+<p id="demo">Use of javascript Click below button</p>
+<button type="button" onclick="myFunction()">Try it</button>
+ 
+  <noscript>Sorry, your browser does not support JavaScript!</noscript><br>
+  <a href="https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=1&w=500">Click here</a>
+<script>
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  }
+  </script>
+</body>
+</html>
