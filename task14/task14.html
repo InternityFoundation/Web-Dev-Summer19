@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #a{
+            word-break: break-all;
+            height: 200px;
+            width: 300px;
+            border: 1px solid black;
+            hyphens:manual;
+        }
+        #b{
+            word-break: normal;
+            height: 200px;
+            width: 310px;
+            border: 1px solid black;
+            word-spacing: 10px;
+            word-wrap: break-word;
+            line-height: 150%;
+             page-break-after : always;
+        }
+        #c{
+            white-space: pre;
+            letter-spacing: 20px;
+           
+        }
+        ul{
+            list-style-position: outside;
+            list-style-type: square;
+        
+        }
+    </style>
+</head>
+<body>
+ <p style="writing-mode:vertical-lr;">vertical tab</p>
+  <h1>word break: break-all</h1>
+   <p id="a">The objective of enabling students obtain certificates for courses is to make students employ.able in the industry or pursue a suitable higher education programme.</p>
+   
+<h1>Word Spacing</h1>
+<p id="b">Through an online portal, 4-, 8-, or 12-week online courses, typically on topics relevant to students in all years of higher education along with basic core courses in sciences and humanities with exposure to relevant tools and technologies, are being offered.</p>
+<p id="c"> The enrolment to and learning from these courses involves no cost. 
+     Following  these online courses, an in-person,
+proctored certification exam will be conducted and a certificate is provided through 
+the participating institutions and industry, when applicable.</p>
+<ul>
+    <li>Data Structure</li>
+    <li>Java</li>
+    <li>Algorithm</li>
+    <li>DBMS</li>
+</ul> 
+</body>
+</html>
