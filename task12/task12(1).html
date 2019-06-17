@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#main {
+  width: 720px;
+  height: 300px;
+  border: 1px solid #c3c3c3;
+  justify-content: space-around;
+  display: flex;
+    flex-wrap: wrap;
+}
+#a {
+  width: 220px;
+  height: 300px;
+  border: 1px solid #c3c3c3;
+  align-items: center;
+  display: flex;
+    
+    float: right;
+}
+#main div {
+  width: 70px;
+    height: 70px;
+}
+    
+#a div {
+    flex:1;
+  /*align-items: center;*/
+}
+
+</style>
+</head>
+<body>
+
+<h1>The align-content Property</h1>
+
+<div id="main">
+        <div style="background-color: peru;">A</div>
+        <div style="background-color: gold;">B</div>
+        <div style="background-color: paleturquoise;">C</div>
+        <div style="background-color: blueviolet;">hasan raza</div>
+        <div style="background-color: plum;">sdadsfsdfsd</div>
+</div>
+<div id="a">
+        <div style="background-color: peru; order: 3;">jnj</div>
+        <div style="background-color: gold; order: :2;">mm</div>
+        <div style="background-color: paleturquoise;">kj</div>
+        <div style="background-color: blueviolet;">kjj</div>
+        <div style="background-color: plum;">mmnjkhjghighgdfgytr</div>
+</div>
+
+
+</body>
+</html>

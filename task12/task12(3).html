@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #img1{
+            transform: skewX(10deg);
+            
+           
+            
+        }
+        #img2{
+            transform: skewY(10deg);
+        }
+        .img3{
+            transform: translateY(100px);
+            transform: rotate(45deg);
+            top:30px; 
+            right: 10px;
+            position: absolute;
+            transform-origin: 20% 40%;
+            
+        }
+        #img4{
+            transform-style: preserve-3d;
+        }
+        div:hover{
+            width: 300px;
+        }
+        div{
+          height: 200px;
+            width:200px;
+            background-color: gold;
+            transition: width 2s;
+        
+        
+            transition-timing-function: linear;
+        }
+    </style>
+</head>
+<body>
+   <div></div>
+   <h2>skewx</h2>
+    <img id="img1" src="mobile.jpg" alt="mobile" style="width:150px; height: 200px">
+       <h2>skewy</h2>
+        <img id="img2" src="mobile.jpg" alt="mobile" style="width:150px; height: 200px">
+           <h2 style=" position: absolute; top:10px; right: 10px;">translateX</h2>
+            <img class="img3" src="mobile.jpg" alt="mobile" style="width:150px; height: 200px">
+      <img id="img4" src="mobile.jpg" alt="mobile" style="width:150px; height: 200px">
+</body>
+</html>
