@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            counter-reset: section;
+        }
+        h1{
+            counter-reset: subsection;
+        }
+        h1:before{
+            counter-increment: section;
+            content: counter(section)".";
+        }
+        h2:before{
+           counter-increment: subsection;
+            content:counter(section)"."counter(subsection); 
+        }
+        div{
+          
+            top:30px;
+            position: absolute;
+            right: 100px;
+            filter:  drop-shadow(10px 10px 10px gold);
+        }
+        #p1{
+            position: absolute;
+            top: 300px;
+            right: 100px;
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+        overflow: scroll;
+            visibility: visible;
+        }
+        #p2{
+            top:150px;
+            position: absolute;
+            right: 110px;
+            color: darkgreen;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Dtastructure</h1>
+    <h2>LinkedList</h2>
+    <h2>Stack</h2>
+    <h2>Queue</h2>
+    <h2>Tree</h2>
+    <h2>Graph</h2>
+    <h1>Algorithm</h1>
+    <h2>Complexity</h2>
+    <h2>Greedy Method</h2>
+    <h2>Dynamic Approach</h2>
+    <h2>BottomUp Approach</h2>
+    <h2>Devide and Conquer</h2>
+    <h2>NP hard and Np completeness</h2>
+    <div>
+        <h3>Drop Shadow Property</h3>
+        <img src="mail.png" style="width: 200px; height: 150px;" alt="mail">
+    </div>
+    <p id="p1">The objective of enabling students obtain certificates for courses is to make students employable in the industry or pursue a suitable higher education programme.
+
+Through an online portal, 4-, 8-, or 12-week online courses, typically on topics relevant to students in all years of higher education along with basic core courses in sciences and humanities with exposure to relevant tools and technologies, are being offered. The enrolment to and learning from these courses involves no cost. Following these online courses, an in-person, proctored certification exam will be conducted and a certificate is provided through the participating institutions and industry, when applicable.</p>
+<p id="p2">Z-index property</p>
+</body>
+</html>
