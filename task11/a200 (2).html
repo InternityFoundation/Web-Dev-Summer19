@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#A9A9A9;
+        }
+              .a  {
+            background-color:white;
+            height: 600px;
+            width: 400px;
+            margin-top: 130px;
+            margin-left: 500px;
+            font-size: 20px;
+        
+        }
+        
+        ul{
+            list-style-type: none;
+            color:white;
+            padding-top: 15px;
+            background-color: black;
+            width: 90%;
+            height: 40px;
+        }
+        li{
+        
+            float: left;
+            
+            
+        }
+        
+
+    
+
+        
+        .id1{
+            padding: 2px;
+            font-size: 20px;
+            border: 0;
+            border-bottom: 2px solid black;
+            width: 80%;
+        }
+        form{
+            text-align: center;
+        }
+        
+        header{
+            padding-top: 10px;
+            margin-left: 70px;
+            width: 250px;
+            height: 30px;
+            color: white;
+            background-color: #001f3f;
+        }
+                section{
+            padding-top: 10px;
+            margin-left: 70px;
+            width: 250px;
+            height: 30px;
+            color: white;
+            background-color: red;
+        
+        }
+        .id2
+        {
+            padding-top: 5px;
+        
+            width: 100px;
+            height: 50px;
+            color: white;
+            background-color:#001f3f;  
+        }
+        
+    </style>
+</head>
+<body>
+  
+   <div class="a">
+   <form name="login" >
+   <ul>
+       <li style="padding-left: -10px;" id="x"> LOGIN<li>
+       <li style="padding-left: 30px">REGISTER<li>
+   </ul>
+    <h2>Login To Continue...</h2>
+    <header>LOGIN WITH FACEBOOK</header><br>
+    <section>LOGIN WITH GOOGLE</section><br>
+   <input class="id1" type="text" name="username" placeholder="Email"><br><br>
+       
+           
+   <input class="id1" type="Password" name="password" placeholder="password"><br><br><br><br>
+           
+   <input class="id2" type="button" value="LOGIN" onclick="validate(this.form)"><br>
+   <p style="color: deepskyblue;">Forgotten password?</p>
+   
+    </form>
+     </div>
+     <script type="text/javascript">
+    function validate(form)
+    {
+        console.log("asdff");
+        if(form.username.value=="hasan" && form.password.value=="123@")
+            {
+            alert("Successfully login");
+            }
+        else
+            {
+            alert("invalid detail");
+            }
+    }
+</script>
+</body>
+</html>
