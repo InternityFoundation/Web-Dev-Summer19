@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        a:visited{
+            color: green;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color: black;
+        }
+        input:focus{
+            background-color: aqua;
+        }
+        p:first-child{
+            color: red;
+        }
+        h1:first-of-type{
+            color: skyblue;
+        }
+        p:last-child{
+            color: chocolate;
+        }
+        
+        h1:last-of-type{
+            background-color: yellowgreen;
+        }
+        p:nth-child(2)
+        {
+            color: darkgoldenrod;
+        }
+        p:nth-last-child(2)
+        {
+            color: forestgreen;
+        }
+        h1:nth-last-of-type(2){
+            background-color: deepskyblue;
+        }
+        p:nth-of-type(2)
+        {
+            background-color: lightblue;
+        }
+        p:only-child{
+            color: red;
+        }
+        p:only-of-type{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.facebook.com">Facebook</a><br>
+    User <input type="text" name="user">
+    <div>
+        <p>Paragraph1</p>
+        <p>Paragraph2</p>
+        <h1>Heading h1</h1>
+        <h1>Heading2</h1>
+        <h1>Heading3</h1>
+        <p>Paragraph3</p>
+        <p>Paragraph4</p>
+    </div>
+    <div><p>Only child</p></div>
+    <div><p>Only-of-type</p></div>
+</body>
+</html>

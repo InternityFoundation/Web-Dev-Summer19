@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+            color: white;
+        }
+        input[type=text]:enabled{
+            background-color: red;
+        }
+        input[type=text]:disabled{
+            background-color: greenyellow;
+            color:black;
+        }
+        p:empty{
+        background-color: blanchedalmond;
+        width: 100px;
+            height: 20px;
+        }
+        input[type=number]:in-range{
+            border:2px solid yellow;
+        }
+        input[type=number]:out-of-range{
+            border: 2px solid green;
+            
+        }
+        input:valid{
+        background-color: green;
+            border: 2px solid red;
+        }
+        input:invalid{
+            
+            border: 2px solid green;
+        }
+        :not(p)
+        {
+            color: yellow;
+        }
+    
+        p:lang(en)
+        {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+  <h1>Book</h1>
+  <input type="checkbox" name="os" checked>Operating Sytem <br>
+   <input type="checkbox" name="ds">Data Structur <br>
+    <input type="checkbox" name="java">Java <br><br>
+    FirstName<input type="text" name="fname" value="Hasan"><br>
+    LastName
+    <input type="text" name="fname" value="Raza"><br>
+    Country<input type="text" name="country" value="India" disabled>
+    <p>iivgfythe ytrr tjhgd65ee56b</p>
+    <p></p>
+    <input type="number" max="10" min="0" value="5"><br>
+    <input type="number" max="20" min="10" value="25"><br>
+    <input type="email" value="abc" required><br>
+    <input type="email" value="abc@gmail.com">
+    <br>
+    <br>
+    <div style="float: right; color: white;">
+    <p>hasan raza</p>
+    <h3 style="float: right;">Allahabad</h3>
+    </div>
+    <p lang="en">Bareilly</p>
+</body>
+</html>
