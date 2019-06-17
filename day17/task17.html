@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  /* Set "my-sec-counter" to 0 */
+  counter-reset: my-sec-counter;
+
+}
+
+h5::before {
+  /* Increment "my-sec-counter" by 1 */
+  counter-increment: my-sec-counter;
+  content: "Section " counter(my-sec-counter) ". ";
+}
+img
+{
+	width: 30%;
+	height: 30%;
+}
+.logo
+{
+	display: inline;
+	
+	margin-left: 40px;
+	filter: drop-shadow(30px 10px 4px black);
+}
+.logo1{
+	margin-left: 40px;
+}
+.overf p{
+	text-align: center;
+ white-space: nowrap; 
+  width: 400px; 
+  overflow: hidden;
+  text-overflow:ellipsis;
+  border: 1px solid #000000
+
+}
+.overf p:hover{
+	overflow: visible;
+}
+.zindex1,.zindex2
+{
+	width: 300px;
+	height: 300px;
+	 position: absolute;
+	border: 3px solid grey;
+
+}
+.zindex1
+{
+	z-index: 11;
+	margin: 20px;
+	background-color: #435321;
+   font-family: sans-serif;
+   word-spacing: 7px;
+   writing-mode: sideways-lr;
+   text-shadow: rgb(211,153,131,.3);
+}
+.zindex2
+{
+	background-color: #234241;
+}
+</style>
+</head>
+<body>
+	<h5>HTML</h5>
+	<h5>CSS</h5>
+	<h5>JavaScript</h5>
+	<h5>Bootstrap</h5>
+	<h5>SQL </h5>
+	<h5>PHP</h5>	
+	  <div class="overf">
+  	<p>
+  		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti et nostrum quibusdam expedita fugit quaerat illum ea eligendi necessitatibus, sit assumenda delectus.
+  	</p>
+  </div> 
+   <img  class="logo" src="logo1.png" alt="logo">
+    <img class="logo1" src="logo1.png" alt="">
+ <div class="zindex1">
+ 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae harum quisquam nulla nesciunt itaque voluptatem porro quos quia, officia animi.</p>
+ </div>
+ <div class="zindex2">
+ 	
+ </div>
+</body>
+</html>
+       
