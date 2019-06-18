@@ -9,3 +9,5 @@ Blog 4 Link- https://medium.com/@amritgangwar/html-table-examples-dedd3592ae48
 Blog 5 Link- https://medium.com/@amritgangwar/drawing-elements-c4f58e6ff388
 
 Blog 6 Link- https://medium.com/@amritgangwar/blog-writing-58e775ae5746
+
+Blog 7 Link- https://medium.com/@amritgangwar/html-attributes-8dd3fcfbf489
