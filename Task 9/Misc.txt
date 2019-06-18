@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Simple Form submittion Page</h1><hr><br>
+<center>
+<form action="/action_page.php" method="get">
+  First name: <input type="text" name="fname" maxlength="10"  placeholder="Amrit" required><br><br>
+  Last name: <input type="text" name="lname" maxlength="10"  placeholder="Gangwar"required><br><br>
+  Email: <input type="text" name="email"required><br><br>
+  Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"required><br><br>
+  
+   <input list="browsers" name="browser" placeholder="Choose branch">
+  <datalist id="browsers">
+    <option value="CS">
+    <option value="EI">
+    <option value="EC">
+    <option value="ME">
+    <option value="EE">
+  </datalist><br><br>
+  Enter a date before 1980-01-01:
+  <input type="date" name="bday" max="1979-12-31"required><br><br>
+
+  Enter a date after 2000-01-01:
+  <input type="date" name="bday" min="2000-01-02"required><br><br>
+
+  Quantity (between 1 and 5):
+  <input type="number" name="quantity" min="1" max="5"required><br><br>
+   Select images: <input type="file" name="img" multiple required ><br><br>
+ 
+  <input type="image" src="https://comps.canstockphoto.com/submit-icon-stock-photography_csp18352605.jpg" alt="Submit" width="48" height="48">
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1.intro {
+  color: blue;
+}
+
+p.important {
+  color: green;
+}
+
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+</style>
+</head>
+<body>
+<h1 id="myHeader1" style="color:blue;text-align:center">Hello Amrit!<br>
+<button onclick="displayResult()">Change text</button></h1>
+
+<h1 class="intro">Here we use class attribute</h1>
+<p class="important">I am amrit gangwar completed 3rd year b.tech degree of csit branch</p>
+<p contenteditable="true">This is an editable paragraph, so edit it according to yourself.</p>
+<p dir="rtl">Below are the subjects that I have studies.</p>
+<center><h1><abbr title= "Engineering subjects">Subjects</abbr></h1></center>
+<p>Click on a subjects to see for which branch it is related to:</p>
+
+<ul>
+  <li onclick="showDetails(this)" id="CS" data-subjects-type="CS">C++</li>
+  <li onclick="showDetails(this)" id="EC" data-subjects-type="EC">Micro controller</li>  
+  <li onclick="showDetails(this)" id="ME" data-subjects-type="ME">Thermodynamics</li>  
+</ul>
+<br><hr><center>
+<a href="https://www.w3schools.com/html" accesskey="h">HTML tutorial</a><br>
+<a href="https://www.w3schools.com/css" accesskey="c">CSS tutorial</a>
+</center>
+<p>The accesskey attribute specifies a shortcut key to activate/focus an element.<br>Click alt + h or c</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<p id="drag1" draggable="true" ondragstart="drag(event)">This is a draggable paragraph. Drag this element into the rectangle.</p>
+<p hidden>This paragraph should be hidden.</p>
+<script>
+function showDetails(subjects) {
+  var subjectsType = subjects.getAttribute("data-subjects-type");
+  alert("The " + subjects.innerHTML + " is related to " + subjectsType + ".");
+}
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("Text", ev.target.id);
+}
+
+function drop(ev) {
+  var data = ev.dataTransfer.getData("Text");
+  ev.target.appendChild(document.getElementById(data));
+  ev.preventDefault();
+}
+function displayResult() {
+  document.getElementById("myHeader1").innerHTML = "Have a nice day!";
+  }
+</script>
+
+</body>
+</html>
