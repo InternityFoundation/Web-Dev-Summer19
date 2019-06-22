@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>day20</title>
+	<style>
+		*{
+			box-sizing: border-box;
+			padding: 0px;
+			margin: 0px;
+			margin-left: 11%;
+			 background-image: linear-gradient(to right, lightgreen , yellow); 
+		}
+		img{
+			
+			width: 300px;
+			height: 300px;
+		}
+		.skew img
+		{
+			margin: 50px;
+			transform: skew(15deg, 15deg);
+			background-color: hsla(170, 45%, 45%, 1)
+
+		}
+		.skewX img{
+            transform: skewX(35deg);
+            background-color: rgba(63,166,149,1);
+            background-color: rgb(0%,0%,100%);
+		}
+		.translate img{
+			 transform: translate(50px, 50px);
+			 background-color: rgba(255, 99, 71, 0.5);
+		}
+		translateX img{
+			margin-top: 39px;
+			 transform: translateX(160px);
+			 background-image: linear-gradient(180deg, red, yellow);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<img src="logo1.png" alt="">
+		<div class="skew">
+			<h1>skew()</h1>
+			<img src="logo1.png" alt="">
+		</div>
+		<div class="skewX">
+			<h1>skewX()</h1>
+			<img src="logo1.png" alt="">
+		</div>
+		<div class="translate">
+			<h1>Translate()</h1>
+			<img src="logo1.png" alt="">
+		</div>
+		<div class="translateX">
+			<h1>TranslateX()</h1>
+			<img src="logo1.png" alt="">
+		</div>
+	</div>
+	
+</body>
+</html>
