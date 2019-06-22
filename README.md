@@ -11,3 +11,5 @@ Blog 5 Link- https://medium.com/@amritgangwar/drawing-elements-c4f58e6ff388
 Blog 6 Link- https://medium.com/@amritgangwar/blog-writing-58e775ae5746
 
 Blog 7 Link- https://medium.com/@amritgangwar/html-attributes-8dd3fcfbf489
+
+Blog 8 Link- https://medium.com/@amritgangwar/css-concepts-selectors-318d8c165cac
