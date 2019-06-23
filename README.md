@@ -13,3 +13,5 @@ Blog 6 Link- https://medium.com/@amritgangwar/blog-writing-58e775ae5746
 Blog 7 Link- https://medium.com/@amritgangwar/html-attributes-8dd3fcfbf489
 
 Blog 8 Link- https://medium.com/@amritgangwar/css-concepts-selectors-318d8c165cac
+
+Blog 9 Link- https://medium.com/@amritgangwar/pseudo-classes-cf7d665536a
