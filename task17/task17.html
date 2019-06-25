@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.a {
+  perspective: 800px;
+}
+.b {
+  font-size: 4em;
+  width: 2em;
+  margin: 1.5em auto;
+  transform-style: preserve-3d;
+  transform: rotateX(-45deg) rotateY(30deg);
+}
+
+.side {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: grey;
+  border: 1px solid green;
+  text-align: center;
+  line-height: 2em;
+}
+
+.front {transform: translateZ(1em); 
+background: rgba(0, 255, 0, 1);
+    }
+.top {transform: rotateX(90deg) translateZ(1em);
+    backface-visibility: visible;
+     background: rgba(196, 196, 0, 0.7);
+    }
+.right {transform: rotateY(90deg) translateZ(1em);
+     background: rgba(196, 0, 0, 0.7);
+    }
+.left {transform: rotateY(-90deg) translateZ(1em);
+    background: rgba(0, 0, 196, 0.7);
+    }
+.bottom {transform: rotateX(-90deg) translateZ(1em);
+     background: rgba(196, 0, 196, 0.7);
+    }
+.back {transform: rotateY(-180deg) translateZ(1em);
+      background: rgba(0, 0, 0, 0.3);
+    }
+    #c{
+        float: left;
+        transform:  rotate3d(1,1,1,60deg);
+        background-color: aqua;
+    } 
+    #d{
+        transform: matrix(-1,-1,1,-1,-1,1);
+        background-color: pink;
+        height: 100px;
+        width: 100px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    #e{
+           transform: matrix3d(0.583333, 0.186887, 0.79044, 0, -0.52022, 0.833333, 0.186887, 0, -0.623773, -0.52022, 0.583333, 0, 0, 0, 0, 1);
+        background-color:greenyellow;
+        height: 100px;
+        width: 100px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;  
+    }
+    #f{
+        transform: scale3d(3,3,2);
+        background-color:yellow;
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        bottom: 100px;
+        left: 100px;
+        
+    }
+</style>
+</head>
+<body>
+
+<div class="a">
+  <div class="b">
+  <div class="side front">1</div>
+  <div class="side back">6</div>
+  <div class="side right">4</div>
+  <div class="side left">3</div>
+  <div class="side top">5</div>
+  <div class="side bottom">2</div>
+  </div>
+    </div>
+    <div id="c">
+    <p>	Rotation 3d</p>    
+    </div><br><br><br><br><br>
+    <div id="d">
+        <p>magtrix 2d</p>
+    </div>
+    <div id="e">
+        <p>matrix 3d</p>
+    </div>
+    <div id="f">
+        <p>scale 3d</p>
+    </div>
+</body>
+</html>
