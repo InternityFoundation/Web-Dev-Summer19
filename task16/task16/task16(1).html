@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .a{
+            clip-path: circle(45% at 50% 50%);
+        
+        }
+        .c{
+            -webkit-mask-clip:content-box;
+            mask-clip:content-box;
+            mask-repeat:repeat;
+        }
+    </style>
+</head>
+<body>
+  <h2>Original </h2>
+   <img src="f4.jpg" alt="flower">
+   <h2>clip-path</h2>
+   <img class="a" src="f4.jpg" alt="flower">
+   <div class="b">
+       <div class="c">
+           <p>The mask-clip property determines the mask painting area, which determines the area of an element that is affected by a mask. The painted (visible) content of an element must be restricted to this area.</p>
+           <img src="f5.jpg" alt="asd">
+           
+       </div>
+   </div> 
+</body>
+</html>

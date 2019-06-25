@@ -1,0 +1,58 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #a{
+            image-rendering:auto;
+        }
+         #b{
+            image-rendering:pixelated;
+        }
+         #c{
+            image-rendering:high-quality;
+        }
+    </style>
+</head>
+<body>
+  <div>
+      <p onclick="coor(event)" style="width: 300px; height: 300px; border: 1px solid black;"> please click to know x and y coordinate</p>
+      </div>
+
+<p id="a2"></p>
+ <div style="float: left;">
+  <h2>Pointer events=> none</h2>
+  <a href="https://www.google.com" style="pointer-events: none;">Google</a>
+</div>
+ <div style="float: left;">
+  <h2>Pointer events=> auto</h2> 
+    <a href="https://www.facebook.com" style="pointer-events: auto;">Facebook</a>
+    </div>
+    <div style="float: left;">
+    <h2>cursor url proprty</h2>
+    <p style="cursor: url(s1.png),auto;">Internity Foundation </p>
+  </div>
+
+
+<script>
+function coor(event) {
+  var x = event.clientX;
+  var y = event.clientY;
+  var c = "X : " + x + ", Y : " + y;
+  document.getElementById("a2").innerHTML = c;
+}
+</script>
+  <div id="a">
+  <img src="f4.jpg" alt=" bgt" margin: 10px; style="float: left; width: 200px; height: 200px;">
+  </div>
+    <div id="b">
+  
+  <img src="f4.jpg" alt=" bgt" style="margin: 10px; float: left; width: 200px; height: 200px;">
+  </div>
+    <div id="c">
+  
+  <img src="f4.jpg" alt=" bgt" style=" margin: 10px;float: left; width: 200px; height: 200px;">
+  </div> 
+</body>
+</html>
