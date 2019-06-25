@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    #a{
+        
+        transform: translate3d(70px,70px,70px);
+    }
+    #b{ 
+        width: 200px;
+        height: 200px;
+        background-color:hsl(220,100%,30%);
+        color:white;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    #c{ 
+        width: 200px;
+        height: 200px;
+        background-color:hsla(220,50%,20%,.9);
+        color:white;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    #d{ 
+        width: 200px;
+        height: 200px;
+        background-color:rgb(50%,70%,10%);
+        color:white;
+        position: fixed;
+        bottom: 20px;
+        right: 250px;
+    }
+    #e{ 
+        width: 200px;
+        height: 200px;
+        background-color:rgba(60%,10%,10%,.3);
+        color:white;
+        position: fixed;
+        top: 20px;
+        right: 250px;
+    }
+    
+    #f{ 
+        width: 100px;
+        
+        background-image:linear-gradient(rgba(50,250,250,0.3),rgba(50,250,250,0.9));
+        color:black;
+        position: fixed;
+        bottom: 20px;
+        right: 480px;
+        text-align: center;
+        padding: 50px;
+        line-height: 100px;
+    }
+    
+    #g{ 
+        width: 200px;
+        line-height: 200px;
+        background-image:radial-gradient(circle, red,deeppink,orange);
+        color:white;
+        position: fixed;
+        top: 20px;
+        right: 480px;
+        text-align: center;
+    }
+    </style>
+<body>
+ <h1>Originoal</h1>
+
+      <img src="f5.jpg" alt="" width="200px" height="200px">
+
+   <h1>Translate 3d</h1>
+  <div id="a">
+      <img src="f5.jpg" alt="" width="200px" height="200px">
+  </div> 
+  <div id="b">hsl()</div>
+  <div id="c">hsla()</div>
+  <div id="d">rgb()</div>
+  <div id="e">rgba()</div>
+    <div id="f">linear gradient</div>
+      <div id="g">radial gradient</div> 
+</body>
+</html>
