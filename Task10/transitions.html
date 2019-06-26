@@ -1,0 +1,50 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>CSS transitions</title>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background-color:blue; 
+				transition: transform 2s;
+			}
+			div.sample1:hover {
+				transform: scale(2,2);
+			}
+
+			div.sample2:hover {
+				transform: skew(20deg,40deg);
+			}
+			div.sample3:hover {
+				transform: rotate(45deg);
+			}
+			div.sample4:hover {
+				transform: translate(500px,50px);
+			}
+			div.sample5:hover {
+				transform: scale(2,2);
+			}
+
+		</style>
+	</head>
+	<body>
+	<div class="sample1" style="">
+	Div 1
+	</div><br><br>
+
+	<div class="sample2">
+	Div 2
+	</div><br><br>
+	<div class="sample3">
+	Div 3
+	</div><br><br>
+	<div class="sample4">
+	Div 4
+	</div><br><br>
+	<div class="sample5">
+	Div 5
+	</div><br><br>
+
+	</body>
+	</html>

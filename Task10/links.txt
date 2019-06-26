@@ -1,0 +1,3 @@
+flexbox blog : https://nastydaemontech.blogspot.com/2019/06/css-flexbox.html
+fonts blog : https://nastydaemontech.blogspot.com/2019/06/css-fonts.html
+transitions blog : https://nastydaemontech.blogspot.com/2019/06/css-transform.html
