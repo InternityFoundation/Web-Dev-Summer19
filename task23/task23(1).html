@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+<script>
+
+ function Vehicle()
+{
+    this.vehicleName="vehicleName";
+    throw new Error("You cannot create an instance of Abstract Class");
+}
+Vehicle.prototype.display=function()
+{
+    return "Vehicle is: "+this.vehicleName;
+}
+
+function Bike(vehicleName)
+{
+    this.vehicleName=vehicleName;
+}
+
+Bike.prototype=Object.create(Vehicle.prototype);
+var bike=new Bike("Honda");
+document.writeln(bike.display());
+var today=new Date();
+document.write("<br>"+today);
+    var b=Math.pow(10,2);
+document.write("<br>Math Object Power of="+b);
+    a="HASAN RAZA";
+    b=/RAZ/.test(a);
+    document.write("<br>"+b);
+
+
+ </script>
+</head>
+<body>
+    
+</body>
+</html>

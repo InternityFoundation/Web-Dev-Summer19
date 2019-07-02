@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<script>
+    class Employee{
+        constructor(id,name)
+        {
+            this.id=id;
+            this.name=name;
+        }
+        dispaly()
+        {
+            document.write(this.id+" "+this.name+"<br>");
+        }
+    }
+    var ob1=new Employee("16cs28","Hasan Raza");
+    var ob2=new Employee("123","asdfgh");
+    ob1.dispaly();
+    ob2.dispaly();
+
+    </script>
+        <script>
+
+        class Bike{
+        constructor(){
+            this.module="Hero";
+        }
+    }
+    class Vehicle extends Bike{
+        constructor(name,price)
+        {
+            super();
+            this.name=name;
+            this.price=price;
+        }
+    }
+    var ob1=new Vehicle("Honda",55000);
+    document.write(ob1.module+" "+ob1.name+" "+ob1.price+"<br>");
+    
+    </script>
+    <script>
+    
+    class A
+        {
+            dispaly()
+            {
+                document.write("A is invoked<br>");
+            }
+        }
+        class B extends A{
+            
+        }
+        var ob=new B();
+        ob.dispaly();
+    </script>
+
+
+ 
+    
+<body>
+    
+</body>
+</html>
