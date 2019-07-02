@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task25</title>
+</head>
+<body>
+	
+
+
+
+	<script language="javascript" type="text/javascript">
+
+		//SuperType constructor function
+function SuperType(){
+	this.name = "Virat"
+}
+
+//SuperType prototype
+SuperType.prototype.getSuperName = function(){
+	return this.name
+}
+
+//SubType prototype function
+function SubType(){
+	this.age = 26
+}
+
+//Inherit the properties from SuperType
+SubType.prototype = new SuperType();
+
+//Add new property to SubType prototype
+SubType.prototype.getSubAge = function(){
+	return this.age;
+}
+
+//Create a SubType object
+var subTypeObj = new SubType();
+console.log(subTypeObj.name); //Output: Virat
+console.log(subTypeObj.age); //Output: 26
+console.log(subTypeObj.getSuperName()); //Output: Virat
+console.log(subTypeObj.getSubAge()); //Output: 26
+var person1 = new Object();
+
+person1.name = 'Chris';
+person1['age'] = 38;
+person1.greeting = function() {
+  alert('Hi! I\'m ' + this.name + '.');
+};
+var person1 = new Object({
+  name: 'Chris',
+  age: 38,
+  greeting: function() {
+    alert('Hi! I\'m ' + this.name + '.');
+  }
+});
+var person2 = Object.create(person1);
+person2.name
+person2.greeting()
+<!--
+ 
+// Object Literals
+ 
+timObject = {
+    property1 : "Hello",
+    property2 : "MmmMMm",
+    property3 : ["mmm", 2, 3, 6, "kkk"],
+    method1 : function(){alert("Method had been called" + this.property1)}
+};
+ 
+timObject.method1();
+alert(timObject.property3[2]) // will yield 3
+ 
+var circle = { x : 0, y : 0, radius: 2 } // another example
+ 
+// nesting is no problem.
+var rectangle = { 
+    upperLeft : { x : 2, y : 2 },
+    lowerRight : { x : 4, y : 4}
+}
+ 
+alert(rectangle.upperLeft.x) // will yield 2
+ 
+//-->
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task26</title>
+</head>
+<body>
+	<script>
+var materials = [
+  'Hydrogen',
+  'Helium',
+  'Lithium',
+  'Beryllium'
+];
+
+console.log(materials.map(material => material.length));
+
+
+
+		class Numbers {
+  constructor(array) {
+    this.array = array;
+  }
+  addNumber(number) {
+    if (number !== undefined) {
+       this.array.push(number);
+    } 
+    return (number) => { 
+      console.log(this === numbersObject); // => true
+      this.array.push(number);
+    };
+  }
+}
+var numbersObject = new Numbers([]);
+numbersObject.addNumber(1);
+var addMethod = numbersObject.addNumber();
+addMethod(5);
+console.log(numbersObject.array); // => [1, 5]
+
+
+
+
+function sum1(a, b) {
+  return a + b;
+}
+var sum2 = function(a, b) {
+  return a + b;
+}
+var sum3 = (a, b) => a + b;
+console.log(typeof sum1 === 'function'); // => true
+console.log(typeof sum2 === 'function'); // => true
+console.log(typeof sum3 === 'function'); 
+
+
+let num = +prompt("Enter a positive integer number?", 35)
+
+let diff, result;
+
+function fib(n) {
+  if (n < 0 || Math.trunc(n) != n) {
+    throw new Error("Must not be negative, and also an integer.");
+  }
+  return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+}
+
+let start = Date.now();
+
+try {
+  result = fib(num);
+} catch (e) {
+  result = 0;
+} finally {
+  diff = Date.now() - start;
+}
+
+alert(result || "error occurred");
+
+alert( `execution took ${diff}ms` );
+	</script>
+	
+</body>
+</html>

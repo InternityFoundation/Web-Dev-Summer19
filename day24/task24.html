@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task24</title>
+</head>
+<body>
+	
+
+	<script>
+		var fruits = ['Apple', 'Banana'];
+		document.write("Array=  "+ fruits+"</br>");
+        document.write("length= "+fruits.length); 
+       var first = fruits[0];
+      var last = fruits[fruits.length - 1];
+      document.write("</br>First element= "+first+"</br> Last Element= "+last);
+      fruits.forEach(function(item, index, array) {
+  console.log(item, index);
+ document.write("</br>"+item+" "+index)
+});
+var newLength = fruits.push('Orange');
+document.write("</br>New Array length= "+newLength);
+var last = fruits.pop(); 
+document.write("</br>"+ last);
+var first = fruits.shift(); 
+var newLength = fruits.unshift('Strawberry')
+document.write("</br>"+first);
+document.write("</br>"+newLength);
+fruits.push('Mango');
+
+var pos = fruits.indexOf('Banana');
+document.write("</br>"+pos);
+var removedItem = fruits.splice(pos, 1);
+document.write("</br removedItem= "+removedItem);
+
+var arr = ['this is the first element', 'this is the second element', 'this is the last element'];
+console.log(arr[0]);              // logs 'this is the first element'
+console.log(arr[1]);              // logs 'this is the second element'
+console.log(arr[arr.length - 1]); 
+fruits[5] = 'mango';
+console.log(fruits[5]); // 'mango'
+console.log(Object.keys(fruits));  // ['0', '1', '2', '5']
+console.log(fruits.length);
+fruits.length = 10;
+console.log(Object.keys(fruits)); // ['0', '1', '2', '5']
+console.log(fruits.length);
+fruits.length = 2;
+console.log(Object.keys(fruits)); // ['0', '1']
+console.log(fruits.length); 
+var months = ['March', 'Jan', 'Feb', 'Dec'];
+months.sort();
+console.log(months);
+// expected output: Array ["Dec", "Feb", "Jan", "March"]
+
+var array = [1, 30, 4, 21, 100000];
+array.sort();
+console.log(array);
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+// 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer));
+// expected output: 10
+
+// 5 + 1 + 2 + 3 + 4
+console.log(array1.reduce(reducer, 5));
+var array3 = [1, 4, 9, 16];
+
+// pass a function to map
+const map1 = array3.map(x => x * 2);
+
+console.log(map1);
+var animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
+
+console.log(animals.lastIndexOf('Dodo'));
+// expected output: 3
+
+console.log(animals.lastIndexOf('Tiger'));
+var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+	</script>
+</body>
+</html>
