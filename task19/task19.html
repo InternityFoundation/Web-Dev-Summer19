@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="container">
+    <h2 id="a">Hasan</h2>
+    <h2 id="b">Raza</h2>
+    <div id="c"></div>
+       <div id="d"></div>
+       <img id="e" src="t2.jpg" alt="image" style="position: absolute;right:0px;top: 0px; width:500px" height="650px;"><br><br><br><br><br>
+    <button onclick="document.getElementById('e').src='t1.jpg'">ChangeImage</button><br><br><br><br>
+       <h1 id="f" onmouseover="document.getElementById('f').style.color='green'">ThankYou</h1><br><br>
+       <div id="g"></div>
+       </div>
+        <script>
+            var x=document.getElementsByTagName("h2"); document.getElementById("c").innerHTML="DomProperty:document.getElementById";
+        document.getElementById("d").innerHTML=x[0].innerHTML+" "+x[1].innerHTML;
+            document.getElementById("c").style.color="green";
+            var myVar = setInterval(myTimer, 1000);
+
+function myTimer() {
+  var d = new Date();
+  document.getElementById("g").innerHTML = d.toLocaleTimeString();
+}
+    </script>
+</body>
+</html>
