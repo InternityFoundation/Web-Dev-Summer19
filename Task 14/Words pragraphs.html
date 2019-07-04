@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div { 
+  width: 55px;
+  border: 1px solid black;
+ }
+div.a1 {
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  color: green;
+}
+div.b1 {
+  -webkit-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+   color: blue;
+}
+div.c1 {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+   color: red;
+}
+p {
+  width: 140px; 
+  border: 1px solid #000000;
+}
+
+p.a {
+  word-break: normal;
+}
+
+p.b {
+  word-break: keep-all;
+}
+
+p.c {
+  word-break: break-all;
+}
+div.a3 {
+  line-height: normal;
+}
+
+div.b3 {
+  line-height: 1.6;
+}
+
+div.c3 {
+  line-height: 80%;
+}
+
+div.d3 {
+  line-height: 200%;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>The hyphens Property</h1>
+
+<h2>Hyphens: none</h2>
+<p>No hyphen; overflow if needed.</p>
+<div class="a1">A veryvery­very long word.</div>
+
+<h2>hyphens: manual</h2>
+<p>Hyphen only at &hyphen; or &shy; (if needed).</p>
+<div class="b1">A veryvery­very long word.</div>
+
+<h2>hyphens: auto</h2>
+<p>Hyphen where the algorithm is deciding (if needed).</p>
+<div class="c1">A ververy­very long word.</div>
+
+<br>
+
+<h1>The word-break Property</h1>
+
+<h2>word-break: normal (default):</h2>
+<p class="a">Thisissomeveryveryverylong word. Words will break according to usual rules.</p>
+
+<h2>word-break: keep-all:</h2>
+<p class="b">Thisissomeveryveryverylong word. This text will-break-at-hyphens.</p>
+
+<h2>word-break: break-all:</h2>
+<p class="c">Thisissomeveryveryverylong word. This text will break at any character.</p>
+</center>
+<hr width= 50%>
+<q id="myQ">This is a Internity.</q>
+<br><br>
+Click the "Try it" button to change the quote property of the Q element:
+<br><br>
+<button onclick="myFunction()">Try it</button>
+<br><br><hr>
+
+<script>
+function myFunction() {
+  document.getElementById("myQ").style.quotes = "'\253' '\273'";
+}
+</script>
+</body>
+</html>

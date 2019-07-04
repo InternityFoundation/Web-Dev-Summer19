@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.a {
+  line-height: normal;
+}
+
+div.b {
+  line-height: 1.6;
+}
+
+div.c {
+  line-height: 80%;
+}
+
+div.d {
+  line-height: 200%;
+}
+p.test1 {
+  writing-mode: horizontal-tb; 
+}
+
+p.test2 {
+  writing-mode: vertical-rl; 
+}
+
+span.test2 {
+  writing-mode: vertical-rl; 
+}
+p.a {
+  white-space: nowrap;
+}
+
+p.b {
+  white-space: normal;
+}
+
+p.c {
+  white-space: pre;
+}
+</style>
+</head>
+<body>
+
+<h1>The line-height Property</h1>
+
+<h2>line-height: normal (default):</h2>
+<div class="a">This is a paragraph with a standard line-height.<br>
+The standard line height in most browsers is about 110% to 120%.</div>
+
+<h2>line-height: 1.6 (recommended):</h2>
+<div class="b">This is a paragraph with the recommended line-height.<br>
+The line height is here set to 1.6. This is a unitless value;<br>
+meaning that the line height will be relative to the font size.</div>
+
+<h2>line-height: 80%:</h2>
+<div class="c">This is a paragraph with a smaller line-height.<br>
+The line height is here set to 80%.</div>
+
+<h2>line-height: 200%:</h2>
+<div class="d">This is a paragraph with a bigger line-height.<br>
+The line height is here set to 200%.</div>
+<br>
+<hr>
+<h1>The writing-mode Property</h1>
+
+<p class="test1">Some text with default writing-mode.</p>
+
+<p>Some text with a span element with a <span class="test2">vertical-rl</span> writing-mode.</p>
+
+<p class="test2">Some text with writing-mode: vertical-rl.</p>
+<br>
+<hr>
+
+<h1>The white-space Property</h1>
+
+<h2>white-space: nowrap:</h2>
+<p class="a">
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</p>
+
+<h2>white-space: normal:</h2>
+<p class="b">
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</p>
+
+<h2>white-space: pre:</h2>
+<p class="c">
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+This is some text. This is some text. This is some text.
+</p>
+</body>
+</html>
