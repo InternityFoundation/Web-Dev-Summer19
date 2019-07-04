@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div { 
+  width: 55px;
+  border: 1px solid black;
+ }
+div.a {
+ 
+  hyphens: none;
+}
+div.b {
+ 
+  hyphens: manual;
+}
+div.c {
+ 
+  hyphens: auto;
+  line-height: 80%;
+}
+ul  {
+  word-spacing: 10px;
+  list-style: square inside ;
+  list-style-image: url('sqpurple.gif');
+  white-space: nowrap;
+}
+ul.a {
+  list-style-position: outside;
+  
+}
+
+ul.b {
+  list-style-position: inside;
+}
+ol.c {list-style-type: upper-roman;}
+ol.d {list-style-type: lower-alpha;}
+</style>
+</head>
+<body>
+<center>
+<div class="a">A veryvery­very long word.</div>
+
+<h2>hyphens: manual</h2>
+<p>Hyphen only at &hyphen; or &shy; (if needed).</p>
+<div class="b">A veryvery­very long word.</div>
+
+<h2>hyphens: auto</h2>
+<p>Hyphen where the algorithm is deciding (if needed).</p>
+<div class="c">A ververy­very long word.</div>
+</center>
+<h1>The list-style-position Property</h1>
+
+<h2>list-style-position: outside (default):</h2>
+<ul class="a">
+  <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+  <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+  <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+</ul>
+
+<h2>list-style-position: inside:</h2>
+<ul class="b">
+  <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+  <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+  <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+</ul>
+<ol class="c">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+</body>
+</html>

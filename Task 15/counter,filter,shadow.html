@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  counter-reset: section;
+}
+
+h1 {
+  counter-reset: subsection;
+    text-shadow: 2px 2px 5px red;
+}
+
+h1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+
+h2::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
+div.a {
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: yellow;
+  box-shadow: 10px 10px 5px grey;
+}
+img {
+
+
+  width: 33%;
+  height: auto;
+
+ float: left; 
+}
+.blur {filter: blur(4px);}
+.brightness {filter: brightness(0.30);}
+.contrast {filter: contrast(180%);}
+.grayscale {filter: grayscale(100%);}
+.huerotate {filter: hue-rotate(180deg);}
+.invert {filter: invert(100%);}
+.opacity {filter: opacity(50%);}
+.saturate { filter: saturate(7);}
+.sepia {filter: sepia(100%);}
+.shadow {filter: drop-shadow(8px 8px 10px green);}
+h2.b {
+  visibility: hidden;
+}
+div.ex1 {
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  overflow: scroll;
+}
+
+div.ex2 {
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  overflow: hidden;
+}
+
+div.ex3 {
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  overflow: auto;
+}
+
+div.ex4 {
+  background-color: lightblue;
+  width: 110px;
+  height: 110px;
+  overflow: visible;
+}
+</style>
+</head>
+<body>
+
+
+<h1>Day 1 Tasks:</h1>
+<h2>karate kids video</h2>
+<h2>Introduce your self</h2>
+
+<h1>Day 2 Tasks:</h1>
+<h2>Html Basics</h2>
+
+<center>
+<div class="a">A planet is an astronomical body orbiting a star or stellar remnant that is massive enough to be rounded by its own gravity, is not massive enough to cause thermonuclear fusion, and has cleared its neighbouring region of planetesimals.</div><br></center>
+<br>
+<img src="https://cdn.mos.cms.futurecdn.net/ibqtwPKPsuNvqm6akHtZNK.jpg" alt="space" width="300" height="300" >
+<img class="blur" src="https://cdn.mos.cms.futurecdn.net/ibqtwPKPsuNvqm6akHtZNK.jpg" alt="space" width="300" height="300">
+<img class="brightness" src="https://cdn.mos.cms.futurecdn.net/ibqtwPKPsuNvqm6akHtZNK.jpg" alt="space" width="300" height="300">
+<img class="contrast" src="https://cdn.mos.cms.futurecdn.net/ibqtwPKPsuNvqm6akHtZNK.jpg" alt="space" width="300" height="300">
+<img class="grayscale" src="https://cdn.mos.cms.futurecdn.net/ibqtwPKPsuNvqm6akHtZNK.jpg" alt="space" width="300" height="300">
+<img class="huerotate" src="https://cdn.mos.cms.futurecdn.net/ibqtwPKPsuNvqm6akHtZNK.jpg" alt="space" width="300" height="300">
+<img class="invert" src="https://cdn.mos.cms.futurecdn.net/ibqtwPKPsuNvqm6akHtZNK.jpg" alt="space" width="300" height="300">
+<img class="opacity" src="https://cdn.mos.cms.futurecdn.net/ibqtwPKPsuNvqm6akHtZNK.jpg" alt="space" width="300" height="300">
+<img class="saturate" src="https://cdn.mos.cms.futurecdn.net/ibqtwPKPsuNvqm6akHtZNK.jpg" alt="space" width="300" height="300">
+<img class="sepia" src="https://cdn.mos.cms.futurecdn.net/ibqtwPKPsuNvqm6akHtZNK.jpg" alt="space" width="300" height="300">
+<img class="shadow" src="https://cdn.mos.cms.futurecdn.net/ibqtwPKPsuNvqm6akHtZNK.jpg" alt="space" width="300" height="300"><br><br><br><br><br><br><br>
+<h2 class="b">This heading is hidden</h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<center><h4>overflow: scroll:</h4>
+<div class="ex1">A planet is an astronomical body orbiting a star or stellar remnant that is massive enough to be rounded by its own gravity, is not massive enough to cause thermonuclear fusion, and has cleared its neighbouring region of planetesimals.</div>
+
+<h4>overflow: hidden:</h4>
+<div class="ex2">A planet is an astronomical body orbiting a star or stellar remnant that is massive enough to be rounded by its own gravity, is not massive enough to cause thermonuclear fusion, and has cleared its neighbouring region of planetesimals.</div>
+
+<h4>overflow: auto:</h4>
+<div class="ex3">A planet is an astronomical body orbiting a star or stellar remnant that is massive enough to be rounded by its own gravity, is not massive enough to cause thermonuclear fusion, and has cleared its neighbouring region of planetesimals.</div>
+
+<h4>overflow: visible (default):</h4>
+<div class="ex4">A planet is an astronomical body orbiting a star or stellar remnant that is massive enough to be rounded by its own gravity, is not massive enough to cause thermonuclear fusion, and has cleared its neighbouring region of planetesimals.</div></center>
+
+</body>
+</html>

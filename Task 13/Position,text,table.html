@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  text-align: justify;
+  text-justify: inter-word;
+   text-indent: 5px;
+   text-align-last: center;
+}
+h1 {
+  text-shadow: 2px 2px #FF0000;
+   text-decoration-line: overline underline;
+  text-decoration-style: solid;
+    text-decoration-color: green;
+}
+div.a {
+
+  position: relative;
+
+  top: 5px;
+  right: 150px;
+  left: 50px;
+  bottom: 10px;
+ text-transform: uppercase;
+  white-space: nowrap; 
+  width: 50px; 
+  overflow: hidden;
+  text-overflow: clip; 
+  border: 1px solid #000000;
+}
+
+div.b {
+text-transform: lowercase;
+  white-space: nowrap; 
+  width: 50px; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  border: 1px solid #000000;
+}
+
+div.c {
+ text-transform: capitalize;
+  white-space: nowrap; 
+  width: 50px; 
+  overflow: hidden;
+  text-overflow: "----"; 
+  border: 1px solid #000000;
+}
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+th {
+  height: 50px;
+background-color: #f2f2f2;
+}
+td {
+  height: 20px;
+  vertical-align: bottom;
+}
+th, td {
+  padding: 15px;
+    border-bottom: 2px solid red;
+}
+tr:hover {background-color:grey;}
+
+</style>
+</head>
+<body>
+<center>
+<h1>The text-overflow Property<br><br>By Amrit</h1>
+
+
+
+<h2>Text-overflow: clip (default):</h2>
+<div class="a">Hello world!</div>
+
+<h2>Text-overflow: ellipsis:</h2>
+<div class="b">Hello world!</div>
+
+<h2>Text-overflow: "----" (user defined string):</h2>
+<div class="c">Hello world!</div>
+</center><br>
+
+<div>A black hole is a region of spacetime exhibiting gravitational acceleration so strong that nothing no particles or even electromagnetic radiation such as light can escape from it.The theory of general relativity predicts that a sufficiently compact mass can deform spacetime to form a black hole.The boundary of the region from which no escape is possible is called the event horizon. Although the event horizon has an enormous effect on the fate and circumstances of an object crossing it, no locally detectable features appear to be observed. In many ways, a black hole acts like an ideal black body, as it reflects no light. Moreover, quantum field theory in curved spacetime predicts that event horizons emit Hawking radiation, with the same spectrum as a black body of a temperature inversely proportional to its mass. This temperature is on the order of billionths of a kelvin for black holes of stellar mass, making it essentially impossible to observe.</div><br>
+<div style="overflow-x:auto;">
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Savings</th>
+    
+  </tr>
+  <tr>
+    <td>Amrit</td>
+    <td>Gangwar</td>
+    <td>$100</td>
+  </tr>
+  
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+  <tr>
+    <td>Cleveland</td>
+    <td>Brown</td>
+    <td>$250</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
