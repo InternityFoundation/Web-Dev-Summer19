@@ -15,3 +15,9 @@ Blog 7 Link- https://medium.com/@amritgangwar/html-attributes-8dd3fcfbf489
 Blog 8 Link- https://medium.com/@amritgangwar/css-concepts-selectors-318d8c165cac
 
 Blog 9 Link- https://medium.com/@amritgangwar/pseudo-classes-cf7d665536a
+
+Blog 10 link- https://medium.com/@amritgangwar/list-and-align-proper-20c864c9553
+
+Blog 11 Link- https://medium.com/@amritgangwar/text-and-tables-in-html-e563e640fe5d
+
+Blog 12 link- https://medium.com/@amritgangwar/counters-and-shadow-effect-63ad8b65f4f6
