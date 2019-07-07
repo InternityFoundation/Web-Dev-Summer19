@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#p1 {background-color:hsla(120,100%,50%,0.3);}
+#p2 {background-color:hsla(120,100%,75%,0.3);}
+#p3 {background-color:hsla(120,100%,25%,0.3);}
+#p4 {background-color:hsla(120,60%,70%,0.3);}
+#p5 {background-color:hsla(290,100%,50%,0.3);}
+#p6 {background-color:hsla(290,60%,70%,0.3);}
+#p7 {background-color:rgb(255,0,0);opacity:0.6;}
+#p8 {background-color:rgb(0,255,0);opacity:0.6;}
+#p9 {background-color:rgb(0,0,255);opacity:0.6;}
+#p10 {background-color:rgb(192,192,192);opacity:0.6;}
+#p11 {background-color:rgb(255,255,0);opacity:0.6;}
+#p12 {background-color:rgb(255,0,255);opacity:0.6;}
+#p13 {background-color:rgba(255,0,0,0.3);}
+#p14{background-color:rgba(0,255,0,0.3);}
+#p15 {background-color:rgba(0,0,255,0.3);}
+#p16 {background-color:rgba(192,192,192,0.3);}
+#p17 {background-color:rgba(255,255,0,0.3);}
+#p18 {background-color:rgba(255,0,255,0.3);}
+#p19 {background-color:hsl(120,100%,50%);}
+#p20 {background-color:hsl(120,100%,75%);}
+#p21 {background-color:hsl(120,100%,25%);}
+#p22 {background-color:hsl(120,60%,70%);}
+#p23 {background-color:hsl(290,100%,50%);}
+#p24 {background-color:hsl(290,60%,70%);}
+#grad1 {
+  height: 200px;
+
+  background-image: linear-gradient(red, yellow); 
+}
+#grad2 {
+  height: 200px;
+  background-image: repeating-linear-gradient(45deg,red,yellow 7%,green 10%);
+}
+#grad3 {
+  height: 150px;
+  width: 200px;
+  background-image: radial-gradient(red, yellow, green); 
+}
+#grad4 {
+  height: 150px;
+  width: 200px;
+  background-image: repeating-radial-gradient(red, yellow 10%, green 15%); 
+}
+</style>
+</head>
+<body>
+
+<h1>Define Colors With HSLA Values</h1>
+
+<p id="p1">Green</p>
+<p id="p2">Light green</p>
+<p id="p3">Dark green</p>
+<p id="p4">Pastel green</p>
+<p id="p5">Violet</p>
+<p id="p6">Pastel violet</p>
+<h1>Opacity</h1>
+<p id="p7">Red</p>
+<p id="p8">Green</p>
+<p id="p9">Blue</p>
+<p id="p10">Grey</p>
+<p id="p11">Yellow</p>
+<p id="p12">Cerise</p>
+<h1>Rgba</h1>
+<p id="p13">Red</p>
+<p id="p14">Green</p>
+<p id="p15">Blue</p>
+<p id="p16">Grey</p>
+<p id="p17">Yellow</p>
+<p id="p18">Cerise</p>
+<h1>HSL</h1>
+<p id="p19">Green</p>
+<p id="p20">Light green</p>
+<p id="p21">Dark green</p>
+<p id="p22">Pastel green</p>
+<p id="p23">Violet</p>
+<p id="p24">Pastel violet</p>
+<h1>Linear Gradient - Top to Bottom</h1>
+<p>This linear gradient starts at the top. It starts red, transitioning to yellow:</p>
+
+<div id="grad1"></div><br>
+<div id="grad2"></div><br>
+<h1>Radial Gradiant</h1>
+<div id="grad3"></div><br>
+<div id="grad4"></div><br>
+</body>
+</html>

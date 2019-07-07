@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  transition: width 2s;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+div:Hover 
+{ width:30px;
+}
+div#myDiv {
+  transform: skewX(20deg);
+}
+
+div#myDiv1 {
+   transform: skewY(20deg);
+}
+div#myDiv2 {
+ transform: skew(40deg,30deg); 
+ }
+ div#myDiv3 {
+transform: translate(50px,100px);
+ }
+ div#myDiv4 {
+transform: translate3d(150px,100px,150px);
+ }
+ div#myDiv5 {
+transform: translateX(250px);
+ }
+ div#myDiv6 {
+transform: translateY(50px);
+ }
+ div#myDiv7 {
+transform: translateZ(200px);
+ }
+ a:after {content: " (" attr(href) ")";}
+</style>
+</head>
+<body>
+<center>
+<h1>Use of CSS functions</h1>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+This div element is skewed 20 degrees along the X-axis.
+</div><br>
+<div id="myDiv1">
+This div element is skewed 20 degrees along the Y-axis.
+</div>
+<div id="myDiv2">
+This div element is skewed 40deg along X-axis and 30deg along y-axis.
+</div><br>
+<div id="myDiv3">
+Here we use translate functon.
+</div><br>
+<div id="myDiv4">
+Here we use translate3d functon.
+</div><br><br><br>
+<div id="myDiv5">
+Here we use translateX functon.
+</div><br>
+<div id="myDiv6">
+Here we use translateY functon.
+</div><br><br><br><br>
+<div id="myDiv7">
+Here we use translateZ functon.
+</div><br><br>
+<p><a href="https://www.internity.in">Visit Internity Home Page</a></p>
+</center>
+</body>
+</html>
