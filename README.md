@@ -21,3 +21,11 @@ Blog 10 link- https://medium.com/@amritgangwar/list-and-align-proper-20c864c9553
 Blog 11 Link- https://medium.com/@amritgangwar/text-and-tables-in-html-e563e640fe5d
 
 Blog 12 link- https://medium.com/@amritgangwar/counters-and-shadow-effect-63ad8b65f4f6
+
+Blog 13 link- https://medium.com/@amritgangwar/masking-bc3af38ec14b
+
+Blog 14 link- https://medium.com/@amritgangwar/css-clipping-e5e8f311dac4
+
+Blog 15 link- https://medium.com/@amritgangwar/css-user-interface-d2e562170870
+
+Blog 16 link- https://medium.com/@amritgangwar/javascript-concepts-ab289f4c9d1
