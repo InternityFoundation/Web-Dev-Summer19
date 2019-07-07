@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+   justify-content: center;
+  background-color: grey;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.div1
+{
+	margin: 150px;
+  width: 200px;
+  height: 100px;
+  background-color: khaki;
+  border: 1px solid black;
+  -ms-transform: scale(2,3); /* IE 9 */
+  -webkit-transform: scale(2,3); /* Safari prior 9.0 */
+  transform: scale(2,3);
+  margin-left: 40%;
+
+}
+.div2{
+		margin: 150px;
+  width: 200px;
+  height: 100px;
+  border:1px solid black;
+   text-align: center;
+   margin-left: 40%;
+
+}
+
+.div4{
+  width: 300px;
+  height: 100px;
+  background-color: red;
+  border: 1px solid black;
+  text-align: center;
+  margin-left: 40%;
+
+}
+
+.div5{
+	 width: 300px;
+  height: 100px;
+  background-color:skyblue;
+  border: 1px solid black;
+  -ms-transform: skew(20deg,10deg); /* IE 9 */
+  -webkit-transform: skew(20deg,10deg); /* Safari prior 9.0 */
+  transform: skew(20deg,10deg); /* Standard syntax */
+  margin-left: 40%;
+}
+
+.skew{
+	position: relative;
+}
+</style>
+</head>
+<body>
+<h1 style="text-align: center;">Flexible Boxes</h1>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  
+</div>
+<div class="tran">
+	<div class="div1">
+
+	    Two times of its original width and Three times of its original height.
+     </div>
+   <div class="div2" style="background-color: red;">
+	     <h1>Original Div </h1> 
+   </div>
+   <div class="skew">
+	      <h1 style="text-align: center;">The skew() Method</h1>
+          <h3 style="text-align: center;">The skew() method skews an element into a given angle.</h3>
+   </div>
+ </div>
+<div class="div4">
+<h1>Original Div </h1> 
+</div>
+
+<div id="myDiv" class="div5" style="font-size: 20px; font-family: sans-serif;">
+This div element is skew X-axis and Y-axis.
+</div>
+
+</div>
+
+
+
+</body>
+</html>
