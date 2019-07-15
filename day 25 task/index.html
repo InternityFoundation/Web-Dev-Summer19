@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 25 task</title>
+</head>
+<script>
+    class Employee{
+        constructor(id,name,age)
+        {
+            this.id=id;
+            this.name=name;
+            this.age=age;
+        }
+        display()
+        {
+            document.write(this.id+" "+this.name+" "+this.age+"<br>");
+        }
+    }
+    var ob1=new Employee(01,"Aarya", 25);
+    var ob2=new Employee(02,"Samar",30);
+    ob1.display();
+    ob2.display();
+    </script>
+        <script>
+        class Bike{
+        constructor(){
+            this.module="Pulser";
+        }
+    }
+    class Vehicle extends Bike{
+        constructor(name,price)
+        {
+            super();
+            this.name=name;
+            this.price=price;
+        }
+    }
+    var ob1=new Vehicle("Pulser",140000);
+    document.write(ob1.module+" "+ob1.name+" "+ob1.price+"<br>");
+    
+    </script>
+    <script>
+    
+    class A
+        {
+            display()
+            {
+                document.write("Hello Guys!<br>");
+            }
+        }
+        class B extends A{
+            
+        }
+        var ob=new B();
+        ob.display();
+    </script>
+
+
+ 
+    
+<body>
+    
+</body>
+</html>
