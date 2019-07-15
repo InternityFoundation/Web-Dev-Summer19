@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 19 task</title>
+</head>
+<style>
+    #a{
+        
+        transform: translate3d(70px,70px,70px);
+    }
+    #b{ 
+        width: 200px;
+        height: 200px;
+        background-color:hsl(220,100%,30%);
+        color:white;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        text-align: center;
+    }
+    #c{ 
+        width: 200px;
+        height: 200px;
+        background-color:hsla(220,50%,20%,.9);
+        color:white;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        text-align: center;
+    }
+    
+    #d{ 
+        width: 200px;
+        height: 200px;
+        background-color:rgb(50%,70%,10%);
+        color:white;
+        position: fixed;
+        bottom: 20px;
+        right: 250px;
+        text-align: center;
+    }
+    #e{ 
+        width: 200px;
+        height: 200px;
+        background-color:rgba(60%,10%,10%,.3);
+        color:white;
+        position: fixed;
+        top: 20px;
+        right: 250px;
+        text-align: center;
+    }
+    
+    #f{ 
+        width: 100px;
+        
+        background-image:linear-gradient(rgba(50,250,250,0.3),rgba(50,250,250,0.9));
+        color:black;
+        position: fixed;
+        bottom: 20px;
+        right: 480px;
+        text-align: center;
+        padding: 50px;
+        line-height: 100px;
+        text-align: center;
+
+    }
+    
+    #g{ 
+        width: 200px;
+        line-height: 200px;
+        background-image:radial-gradient(circle, purple,khaki,skyblue);
+        color:white;
+        position: fixed;
+        top: 20px;
+        right: 480px;
+        text-align: center;
+    }
+    </style>
+<body>
+ <h1>Original</h1>
+
+      <img src="img.jpg" alt="" width="200px" height="200px">
+
+   <h1>Translate 3d</h1>
+  <div id="a">
+      <img src="img.jpg" alt="" width="200px" height="200px">
+  </div> 
+  <div id="b">hsl()</div>
+  <div id="c">hsla()</div>
+  <div id="d">rgb()</div>
+  <div id="e">rgba()</div>
+    <div id="f">linear gradient</div>
+      <div id="g">radial gradient</div> 
+</body>
+</html>
