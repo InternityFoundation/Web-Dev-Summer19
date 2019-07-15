@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.a {
+  perspective: 800px;
+
+ 
+}
+.b {
+  font-size: 4em;
+  width: 2em;
+  margin: 1.5em auto;
+  transform-style: preserve-3d;
+  transform: rotateX(-45deg) rotateY(30deg);
+  
+}
+.side {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: grey;
+  border: 1px solid green;
+  text-align: center;
+  line-height: 2em;
+}
+.front {transform: translateZ(1em); 
+background: rgba(250, 250, 0, 1);
+    }
+.top {transform: rotateX(90deg) translateZ(1em);
+    backface-visibility: visible;
+     background: rgba(190, 190, 0, 0.7);
+    }
+.right {transform: rotateY(90deg) translateZ(1em);
+     background: rgba(145, 0, 0, 0.7);
+    }
+.left {transform: rotateY(-90deg) translateZ(1em);
+    background: rgba(0, 145, 145, 0.7);
+    }
+.bottom {transform: rotateX(-90deg) translateZ(1em);
+     background: rgba(196, 0, 196, 0.7);
+    }
+.back {transform: rotateY(-180deg) translateZ(1em);
+      background: rgba(0, 0, 0, 0.3);
+    }
+    #c{
+        float: left;
+        transform:  rotate3d(1,1,1,60deg);
+        background-color: aqua;
+
+    } 
+    #d{
+        transform: matrix(-1,-1,1,-1,-1,1);
+        background-color: pink;
+        height: 100px;
+        width: 100px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    #e{
+        transform: matrix3d(0.583333, 0.186887, 0.79044, 0, -0.52022, 0.833333, 0.186887, 0, -0.623773, -0.52022, 0.583333, 0, 0, 0, 0, 1);
+        background-color:khaki;
+        height: 100px;
+        width: 100px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;  
+    }
+    #f{
+        transform: scale3d(3,3,2);
+        background-color:pink;
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        bottom: 100px;
+        left: 100px;
+        text-align: center;
+        
+    }
+</style>
+</head>
+<body>
+
+<div class="a">
+  <div class="b">
+  <div class="side front">A</div>
+  <div class="side back">F</div>
+  <div class="side right">D</div>
+  <div class="side left">C</div>
+  <div class="side top">E</div>
+  <div class="side bottom">B</div>
+  </div>
+</div>
+    <div id="c">
+    <p>	Rotation 3D</p>    
+    </div><br><br><br><br><br>
+    <div id="d">
+        <p>Matrix 2D</p>
+    </div>
+    <div id="e">
+        <p>Matrix 3D</p>
+    </div>
+    <div id="f">
+        <p>Scale 3D</p>
+    </div>
+</body>
+</html>
