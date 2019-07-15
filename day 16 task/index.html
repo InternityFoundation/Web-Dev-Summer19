@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day 16 task</title>
+    <style>
+        body{
+            counter-reset: section;
+        }
+        h1{
+            counter-reset: subsection;
+        }
+        h1:before{
+            counter-increment: section;
+            content: counter(section)".";
+        }
+        h2:before{
+           counter-increment: subsection;
+            content:counter(section)"."counter(subsection); 
+        }
+       
+        #p1{
+            position: absolute;
+            top: 300px;
+            right: 100px;
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            overflow: scroll;
+            visibility: visible;
+        }
+        #p2{
+            top:150px;
+            position: absolute;
+            right: 110px;
+            color: darkgreen;
+            font-size: 30px;
+            font-weight: bold;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <h2>The Need for CSS</h2>
+    <h2>Introduction to CSS</h2>
+    <h2>Basic syntax and CSS</h2>
+    <h2>Using CSS</h2>
+    <h2>Backgrond Images, Colors and Properties</h2>
+    <h1>JAVASCRIPTS</h1>
+    <h2>Javascripts and Object</h2>
+    <h2>Javascript own Object</h2>
+    <h2>The DOM</h2>
+    <h2>Forms and Validation</h2>
+    <h2>Loops and Repetition</h2>
+    <h2>JavaScript and Popup Boxes</h2>
+    <p id="p1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p id="p2">Z-index property</p>
+</body>
+</html>
