@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>day 24 task</title>
+</head>
+<body>
+	
+
+	<script>
+		var Place= ['Delhi', 'Rajsthan'];
+		document.write("Array=  "+ Place+"</br>");
+        document.write("length= "+Place.length); 
+       var first = Place[0];
+      var last = Place[Place.length - 1];
+      document.write("</br>First element= "+first+"</br> Last Element= "+last);
+      Place.forEach(function(item, index, array) {
+  console.log(item, index);
+ document.write("</br>"+item+" "+index)
+});
+var newLength = Place.push('Deharadoon');
+document.write("</br>New Array length= "+newLength);
+var last = Place.pop(); 
+document.write("</br>"+ last);
+var first = Place.shift(); 
+var newLength = Place.unshift('Bangalore')
+document.write("</br>"+first);
+document.write("</br>"+newLength);
+Place.push('Paris');
+var pos = Place.indexOf('Allahabad');
+document.write("</br>"+pos);
+var removedItem = Place.splice(pos, 1);
+document.write("</br removedItem= "+removedItem);
+var arr = ['this is the first element', 'this is the second element', 'this is the last element'];
+console.log(arr[0]);              // logs 'this is the first element'
+console.log(arr[1]);              // logs 'this is the second element'
+console.log(arr[arr.length - 1]); 
+Place[5] = 'Kedarnath';
+console.log(Place[5]);
+console.log(Object.keys(Place));  
+console.log(Place.length);
+Place.length = 10;
+console.log(Object.keys(Place)); 
+Place.length = 2;
+console.log(Object.keys(Place)); 
+console.log(Place.length); 
+var Day = ['Monday', 'Tuesday', 'Wednesday', 'Thursday'];
+Day.sort();
+console.log(Day);
+
+var array = [1, 30, 4, 21, 100000];
+array.sort();
+console.log(array);
+const array1 = [1, 2, 3, 4];
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+console.log(array1.reduce(reducer));
+
+console.log(array1.reduce(reducer, 5));
+var array3 = [1, 4, 9, 16];
+
+const map1 = array3.map(x => x * 2);
+console.log(map1);
+var animals = ['Dodo', 'Tiger', 'Penguin', 'Dodo'];
+console.log(animals.lastIndexOf('Dodo'));
+
+console.log(animals.lastIndexOf('Tiger'));
+var words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+const result = words.filter(word => word.length > 6);
+console.log(result);
+	</script>
+</body>
+</html>
