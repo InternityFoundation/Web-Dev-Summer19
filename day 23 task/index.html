@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>day 23 task</title>
+
+</head>
+<body>
+	<p id="demo1"></p>
+	<p id="demo"></p>
+	<p>Please input a number between 10 and 20:</p>
+
+<input id="demo2" type="text">
+<button type="button" onclick="myFunction()">CHECK</button>
+
+<p id="p01"></p>
+	<script>
+		
+time=15;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+console.log(greeting);
+document.getElementById("demo1").innerHTML = greeting+" Sir";
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    Day = "Sunday";
+    break;
+  case 1:
+    Day = "Monday";
+    break;
+  case 2:
+    Day = "Tuesday";
+    break;
+  case 3:
+    Day = "Wednesday";
+    break;
+  case 4:
+    Day = "Thursday";
+    break;
+  case 5:
+    Day = "Friday";
+    break;
+  case  6:
+    Day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + Day;
+
+var i; 
+  
+for (i = 1; i <= 50; i++)  
+{ 
+    document.write(i+" "); 
+} 
+ var x = 1; 
+  
+  
+    while (x <= 4) 
+    { 
+        document.write("<br />"+"Value of x:" + x + "<br />"); 
+  
+       
+        x++; 
+    } 
+      var languages = { first : "HTML", second : "CSS",  
+                      third : "BOOTSTRAP", fourth : "PHP",  
+                      fifth : "MYSQL" }; 
+  
+  
+    for (itr in languages)  
+    { 
+        document.write(languages[itr] + "<br >"); 
+    } 
+    var x = 21; 
+  
+    do 
+    { 
+        // The line while be printer even 
+        // if the condition is false 
+        document.write("<br />"+"Value of x:" + x + "<br />"); 
+  
+        x++; 
+    } while (x < 20);
+    function myFunction() {
+  var message, x;
+  message = document.getElementById("p01");
+  message.innerHTML = "";
+  x = document.getElementById("demo2").value;
+  try { 
+    if(x == "")  throw "is empty";
+    if(isNaN(x)) throw "is not a number";
+    x = Number(x);
+    if(x > 20)   throw "is too high";
+    if(x < 10)  throw "is too low";
+  }
+  catch(err) {
+    message.innerHTML = "Input " + err;
+  }
+  finally {
+    document.getElementById("demo").value = "";
+  }
+}
+	</script>	
+</body>
+</html>
