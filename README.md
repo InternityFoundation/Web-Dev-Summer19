@@ -29,3 +29,13 @@ Blog 14 link- https://medium.com/@amritgangwar/css-clipping-e5e8f311dac4
 Blog 15 link- https://medium.com/@amritgangwar/css-user-interface-d2e562170870
 
 Blog 16 link- https://medium.com/@amritgangwar/javascript-concepts-ab289f4c9d1
+
+Blog 17 link- https://medium.com/@amritgangwar/javascript-dom-and-bom-5f563fa17b64
+
+Blog 18 link- https://medium.com/@amritgangwar/variables-and-datatypes-in-javascript-cc855f418a3a
+
+Blog 19 link-https://medium.com/@amritgangwar/javascript-operators-4ab0fc0b8334
+
+Blog 20 link-https://medium.com/@amritgangwar/javascript-statements-and-looping-4439b6e476
+
+Blog 21 link-
