@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script type = "text/javascript"> 
+
+// Function definition 
+function welcomeMsg(name) { 
+document.write("Hello " + name + " welcome to this web page."); document.write("<br>");
+} 
+// creating a variable 
+var nameVal = "Internity"; 
+// calling the function 
+welcomeMsg(nameVal); 
+document.write("<br>");
+
+function Vehicle(name, maker) { 
+   this.name = name; 
+   this.maker = maker; 
+} 
+  
+let prof1 = new Vehicle('Web development'); 
+let prof2 = new Vehicle('Android'); 
+  
+document.write(prof1.name);
+document.write("<br>");
+document.write(prof2.name);
+document.write("<br>");
+document.write("<br>");
+
+// Defining class in a Traditional Way. 
+function Vehicle1(name1,maker1,engine1){ 
+	this.name1 = name1, 
+	this.maker1 = maker1, 
+	this.engine1 = engine1 
+}; 
+
+Vehicle1.prototype.getDetails = function(){ 
+	document.write('The name of the bike is '+ this.name1 + "<br>"); 
+} 
+
+let bike1 = new Vehicle1('Hayabusa','Suzuki','1340cc'); 
+let bike2 = new Vehicle1('Ninja','Kawasaki','998cc'); 
+
+document.write(bike1.name1);document.write("<br>"); 
+document.write(bike2.maker1); document.write("<br>");
+document.write(bike1.getDetails()); document.write("<br>");
+
+</script> 
+
+
+</body>
+</html> 

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Strings</h2>
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p>Booleans can have two values: true or false:</p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p>Array indexes are zero-based, which means the first item is [0].</p>
+<p id="demo4"></p>
+
+<p>The typeof operator returns the type of a variable or an expression.</p>
+<p id="demo7"></p>
+<script>
+var answer1 = "It's alright";
+var answer2 = "He is called 'Amrit'";
+var answer3 = 'He is called "Amrit"';
+document.getElementById("demo").innerHTML =
+answer1 + "<br>" + 
+answer2 + "<br>" + 
+answer3;
+var x;        
+x = 5;         
+x = "Internity";      
+document.getElementById("demo1").innerHTML = x;
+var x = 5;
+var y = 5;
+var z = 6;
+document.getElementById("demo2").innerHTML =
+(x == y) + "<br>" + (x == z);
+var person = {
+  firstName : "Amrit",
+  lastName  : "Gangwar",
+  age     : 21,
+  eyeColor  : "blue"
+};
+document.getElementById("demo3").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+
+var cars = ["Lamborgini","Volvo","BMW"];
+
+document.getElementById("demo4").innerHTML = cars[0];
+
+
+
+document.getElementById("demo7").innerHTML = 
+typeof "john" + "<br>" + 
+typeof 3.14 + "<br>" +
+typeof true + "<br>" +
+typeof false + "<br>" +
+typeof x;
+</script>
+</body>
+</html>
+
+

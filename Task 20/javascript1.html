@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<body  onload="checkCookie()">
+<center><h1>Use of Javascript</h1></center>
+<ul>
+<li><p id="demo"></p></li>
+<li><p id="demo1"></p></li>
+<li><p id="demo2"></p></li>
+<li><p id="demo3"></p></li>
+<li><p id="demo4"></p></li>
+
+</ul><center><br>
+<p>Click "Try it". Wait 3 seconds. The page will alert "Hello".</p>
+<p>Click "Stop" to prevent the first function to execute.</p>
+<p>(You must click "Stop" before the 3 seconds are up.)</p>
+
+<button onclick="myVar = setTimeout(myFunction, 3000)">Try it</button>
+
+<button onclick="clearTimeout(myVar)">Stop it</button>
+<p>A script on this page starts this clock:</p>
+
+<p id="demo0"></p>
+
+<button onclick="clearInterval(myVar)">Stop time</button>
+</center>
+<script>
+var w = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+var h = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+
+var x = document.getElementById("demo");
+x.innerHTML = "Browser inner window width: " + w + ", height: " + h + ".";
+
+document.getElementById("demo1").innerHTML = 
+"Screen width is " + screen.width;
+document.getElementById("demo2").innerHTML = 
+"Screen height is " + screen.height;
+document.getElementById("demo3").innerHTML = 
+"Screen pixel depth is " + screen.pixelDepth;
+document.getElementById("demo4").innerHTML = 
+"Screen color depth is " + screen.colorDepth;
+
+function myFunction() {
+  alert("Hello");
+}
+var myVar = setInterval(myTimer ,1000);
+function myTimer() {
+  var d = new Date();
+  document.getElementById("demo0").innerHTML = d.toLocaleTimeString();
+}
+
+function setCookie(cname,cvalue,exdays) {
+  var d = new Date();
+  d.setTime(d.getTime() + (exdays*24*60*60*1000));
+  var expires = "expires=" + d.toGMTString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  var user=getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+     user = prompt("Please enter your name:","");
+     if (user != "" && user != null) {
+       setCookie("username", user, 30);
+     }
+  }
+}
+</script>
+
+</body>
+</html>
