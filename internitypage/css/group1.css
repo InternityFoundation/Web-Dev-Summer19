@@ -1,0 +1,101 @@
+.body{
+    background: grey;
+    font-family:caviar;
+    padding:0px;
+    margin:0px;
+}
+.head-div{
+    padding:1%;
+    background-color: rgb(33, 69, 146);
+    margin-top:2px;
+    
+}
+.logo{
+    vertical-align: center;
+    text-align: center;
+}
+#logo{
+    max-width:120px;
+}
+.heading{
+    font-size: 4vw;
+    color:white;
+    text-align:center;
+}
+.navigation{
+    width:98.2vw;
+    margin-left:-15px; 
+}
+
+#bell{
+    width:5%;
+    position:relative;
+}
+
+.profile-img{
+    margin-top: 8px;
+    margin-right:10px;
+}
+
+@font-face {
+    font-family: caviar;
+    src: url('utilities/Caviar_Dreams_Bold.ttf');
+}
+
+.side-heading{
+    font-size:30;
+}
+
+.sidebar-img{
+    margin-top: 7px;
+    margin-right:80vw;
+    position:relative;
+
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
