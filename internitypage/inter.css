@@ -1,0 +1,73 @@
+.row{
+    display:block;
+    width:100%;
+    background: linear-gradient(green ,white);
+}
+.row::after{
+    display:table;
+    clear: both;
+    content:"";
+}
+.col-1{
+    width:8.33%;
+}
+.col-2{
+    width:16.66%;
+}
+.col-3{
+    width:25%;
+}
+.col-4{
+    width:33.33%;
+}
+.col-5{
+    width:41.65%;
+}
+.col-6{
+    width:50%;
+}
+.col-7{
+    width:58.3%;
+}
+.col-8{
+    width:66.64%;
+}
+.col-9{
+    width:74.97%;
+}
+.col-10{
+    width:83.3%;
+}.col-11{
+    width:91.63%
+}.col-12{
+    width:100%;
+}
+.col{
+    width:35%;
+    float:left;
+    padding:5px;
+}
+img.images{
+    width:90%;
+    border: 5px;
+    border-color: darkred;
+}
+button.btn{
+    width:170px;
+}
+.heading{
+    display:block;
+    margin:15px;
+    text-align: center;
+    color:darkblue;
+    
+}
+@media screen and (max-width: 680px)
+{
+    .col{
+        width:100%;
+        display:block;
+        
+    }
+    
+}

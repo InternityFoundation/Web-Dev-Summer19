@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/group1.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/group1.js"></script>
+<style>
+body {font-family: Arial, Helvetica, sans-serif; }
+ 
+ form {
+	margin-left: 20px;
+	margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+input[type=text]:focus {
+  width: 95%;
+}
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 16px; 
+  margin-left: 14px;
+  resize: vertical;
+  transition: width 0.4s ease-in-out;
+}
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 500px;
+
+}
+input[type=button] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+ border: none;
+  border-radius: 4px; 
+}
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=button]:hover {
+  background-color: #45a049;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0px; 
+}
+img.avatar {
+  width: 10%; 
+}
+</style>
+</head>
+<body>
+  <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <span class="side-heading">Events</span><br>
+        <a href="#">New Event</a>
+        <a href="index1.php">View Event</a>
+        <span class="side-heading">Team</span><br>
+        <a href="internity.html">New Member</a>
+        <a href="#">View Member</a>
+    </div>
+    <div class="container-fluid" id="main">
+    <div class="row head-div rounded-lg">
+        <div class="col-sm-2 mx-auto logo">
+            <img src="images/INTERNITY_LOGO.png" id="logo" class="img-fluid img">
+        </div>
+        <div class="col-sm-8 mx-auto heading">
+            <span>INTERNITY FOUNDATION</span>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-end bg-dark sticky-top navigation rounded-sm">
+
+        <ul class="navbar-nav ">
+            <li class="nav-item">
+                <span onclick="openNav()"><img src="images/sidebar-icon.png" class="sidebar-img" alt="Logo" style="width:30px;" ></span>
+            </li>
+            <li class="nav-item">
+                <img src="images/profile.png" class="profile-img" alt="Logo" style="width:30px;">
+            </li>
+
+            <li class="nav-item dropdown"> 
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                    <img src="images/notification.png" alt="Logo" style="width:30px;">
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Link 1nj</a></li>
+                    <li><a class="dropdown-item" href="#">Link 2jnjn</a></li>
+                    <li><a class="dropdown-item" href="#">Link i3</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <button class="btn btn-primary" class="logout">Logout</button>
+            </li>
+            <!-- Dropdown -->
+            
+        </ul>
+    </nav>
+    </div>
+    </div>
+<div class="imgcontainer">
+    <img src="http://www.internity.in/images/INTERNITY_LOGO.png" alt="Avatar" class="avatar">
+  </div>
+<div class="container">
+<form action="add.php" enctype="multipart/form-data" method="post" id="frm1">
+<fieldset>
+    <legend><center><h1><b>Event Entry Form</b></h1></center></legend><br>
+  Event Name:<br>
+ <input type="text" placeholder="Enter Name" name="ename" required>
+  <br><br>
+  Event Topic:<br>
+ <input type="text" placeholder="Enter Topic" name="etopic" required>
+  <br><br>
+   Event Speakers:<br>
+ <input type="text" placeholder="Enter Speaker" name="espeakers" required>
+  <br><br>
+  Venue Name:<br>
+ <input type="text" placeholder="Venue Name" name="vname" required>
+  <br> <br>
+  Event Organizers:<br>
+ <input type="text" placeholder="Event Organizers" name="eorganizers" required>
+  <br><br>
+  Event Volunteers:<br>
+ <input type="text" placeholder="Event Volunteers" name="evolunteers" required>
+  <br> <br>
+  Event Start Date and Time:<br>
+ <input type="text" placeholder="Event Start Date and Time" name="estartdateandtime" required>
+  <br><br>
+  Event End Date and Time:<br>
+ <input type="text" placeholder="Event End Date and Time" name="eenddateandtime" required>
+  <br><br>
+  </fieldset>
+  
+ 
+<br>
+
+
+<fieldset>
+    <legend><b>Feedback Section:</b></legend><br>
+  Audience Count:<br>
+ <input type="text" placeholder="Enter Audience Count" name="acount" required>
+  <br><br>
+  FeedBack in No like 5 stars–30, 4 stars–25, 3 stars-20, 2 stars-15 1 star-10:<br><br>
+ <div class="rate">
+        <input type="radio" id="star5" name="rate" value="30" /><label for="star5" title="star5">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="22" /><label for="star4" title="star4">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="16" /><label for="star3" title="star3">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="10" /><label for="star2" title="star2">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="6" /><label for="star1" title="star1">1 star</label>
+    </div>
+  <br><br><br>
+  <input type="checkbox" id="myCheck" onChange="myFunction()">&nbsp Click here to enable Testinomial Section<br><br>
+   Testimonial Giver Name:<br>
+ <input type="text" placeholder="Enter Testimonial giver name " name="tgivername" required class="child1" disabled>
+  <br><br>
+  Testinomial:<br><textarea input type="text" placeholder="Enter Testinomial" name="testinomial" required class="child1" disabled>
+ </textarea>
+  <br> <br>
+  
+  </fieldset>
+  <br>
+  <fieldset>
+    <legend><b>Upload Gallery:</b></legend><br>
+  <input type="file" id="fileElem" multiple accept="image/*" name="fileupload" value="fileupload">
+    <br>
+ </fieldset>
+ <input type="submit" name="Submit" value="Submit">
+ <input type="button" onclick="myFunction12()" value="Reset">
+</form> 
+</div><br>
+<script>
+function myFunction12() {
+  document.getElementById("frm1").reset();
+}
+function myFunction() {
+
+  var elements = document.getElementsByClassName("child1");
+  var el = document.getElementById("myCheck");
+
+  for (var i = 0; i < elements.length; i++) {
+    if (el.checked) {
+      elements[i].disabled = false;
+    } else {
+      elements[i].disabled = true;
+    }
+  }
+}
+</script>
+
+</body>
+</html>
