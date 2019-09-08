@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>signup form</title>
+</head>
+<body>
+    <form style="width:30%;" name="form1" action="server_page.php" target="_self" method="POST">
+        <fieldset>
+            <legend> Signup Info :</legend>
+            Username :<br>
+            <input type="text" name="username"><br>
+            Password :<br>
+            <input type="password" name="password"><br><br>
+            <select name="language">
+               <option value="C">C</option>
+               <optgroup label="Object Oriented">
+                      <option value="C++">C++</option>
+                      <option value="Python" selected>Python</option>
+               </optgroup>
+            </select><br><br>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male"><br>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female"><br><br>
+
+            <textarea name="bio"rows="5" cols="30">Write your bio here.
+            </textarea><br>
+             <br>
+             <input type= "submit" value= "Submit">
+
+      </fieldset>
+    </form>
+</body>
+</html>
